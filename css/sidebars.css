@@ -76,17 +76,21 @@ body::-webkit-scrollbar-thumb {
 .btn-toggle {
   display: inline-flex;
   align-items: center;
-  padding: .25rem .5rem;
+  padding: .7rem .7rem;
   font-weight: 600;
   color: rgba(0, 0, 0, .65);
   background-color: transparent;
-  border: 0;
+  border: none;
+  margin-left: 6px;
 }
 
 .btn-toggle:hover,
 .btn-toggle:focus {
   color: rgba(0, 0, 0, .85);
   background-color: #d2f4ea;
+  outline: 0 !important;
+  box-shadow: none !important;
+  transition: 0.5s;
 }
 
 .btn-toggle::before {
@@ -107,7 +111,7 @@ body::-webkit-scrollbar-thumb {
 
 .btn-toggle-nav a {
   display: inline-flex;
-  padding: .1875rem .5rem;
+  padding: .7rem .9rem;
   margin-top: .125rem;
   margin-left: 1.25rem;
   text-decoration: none;
