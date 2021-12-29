@@ -34,7 +34,7 @@ body::-webkit-scrollbar-thumb {
   #menu-content {
     width: 100%;
     min-height: 250px;
-    max-height: 400px;
+    max-height: 580px;
     overflow: auto;
   }
 }
@@ -44,6 +44,7 @@ body::-webkit-scrollbar-thumb {
     width: 250px;
     min-height: 250px;
     max-height: 780px;
+    position: fixed;
   }
 }
 
