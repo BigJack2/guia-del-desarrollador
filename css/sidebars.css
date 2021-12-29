@@ -21,11 +21,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Scroll Personalizado solo del menu */
-#menu::-webkit-scrollbar {
+#menu-content::-webkit-scrollbar {
   width: 10px;
 }
 
-#menu::-webkit-scrollbar-thumb {
+#menu-content::-webkit-scrollbar-thumb {
   background: #616161;
   border-radius: 3px;
 }
@@ -33,21 +33,20 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (min-width: 473px) {
   #menu-content {
     width: 100%;
+    min-height: 250px;
+    max-height: 400px;
+    overflow: auto;
   }
 }
 
 @media only screen and (min-width: 992px) {
   #menu-content {
     width: 250px;
+    min-height: 250px;
+    max-height: 780px;
   }
 }
 
-#menu {
-  width: 100%;
-  min-height: 250px;
-  max-height: 700px;
-  overflow: auto;
-}
 
 .b-example-divider {
   flex-shrink: 0;
