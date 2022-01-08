@@ -1,0 +1,165 @@
+:root {
+  --color1: #ff2d20;
+  --color2: #35495e;
+  --color3: #41b883;
+  --color4: #7952b3;
+  --color5: #595959;
+  --color6: #0083d0;
+  --color7: #fb7a24;
+  --color8: #fff;
+}
+
+.text-color1 {
+  color: var(--color1);
+}
+
+.bg-color1 {
+  background-color: var(--color1);
+}
+
+.text-color2 {
+  color: var(--color2);
+}
+
+.bg-color2 {
+  background-color: var(--color2);
+}
+
+.text-color3 {
+  color: var(--color3);
+}
+
+.bg-color3 {
+  background-color: var(--color3);
+}
+
+.text-color4 {
+  color: var(--color4);
+}
+
+.bg-color4 {
+  background-color: var(--color4);
+}
+
+.text-color5 {
+  color: var(--color5);
+}
+
+.bg-color5 {
+  background-color: var(--color5);
+}
+
+.text-color6 {
+  color: var(--color6);
+}
+
+.bg-color6 {
+  background-color: var(--color6);
+}
+
+.text-color7 {
+  color: var(--color7);
+}
+
+.text_link7 {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color7) !important;
+}
+
+.text_link7:hover {
+  color: var(--color7) !important;
+}
+
+.text-color8 {
+  color: var(--color8);
+}
+
+.bg-color8 {
+  background-color: var(--color8);
+}
+
+.fuente1 {
+  font-family: "Source Code Pro", monospace;
+}
+
+.fuente2 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+
+
+/* RESPONSIVE MEDIA QUERYS */
+@media only screen and (min-width:150px) {
+  /* Estilos de los iframe de codigo */
+.iframe-carbon {
+  width: 100%;
+  border: 0;
+  transform: scale(1);
+  overflow: hidden;
+  background-color: #0083d0;
+}
+#codecss1 {
+  height: 500px;
+}
+#codecss2 {
+  height: 435px;
+  margin-top: 50px;
+}
+#codecss3 {
+  height: 400px;  
+  margin-top: 50px;
+}
+
+#codecss4 {
+  height: 427px;
+}
+#codecss5 {
+  height: 427px;
+}
+#codecss6 {
+  height: 427px;
+}
+#codecss7 {
+  height: 427px;
+}
+#codecss8 {
+  height: 427px;
+}
+}
+
+
+/* PANTALLA TABLET DE sm */
+@media only screen and (min-width:450px) {
+
+}
+
+
+/* PANTALLA MEDIANA DE md */
+@media only screen and (min-width:720px) {}
+#codecss1 {
+  min-height: 427px;
+  margin-top: 50px;
+}
+#codecss2 {
+  min-height: 320px;
+  margin-top: 50px;
+}
+#codecss3 {
+  min-height: 400px;
+  margin-top: 50px;
+}
+
+/* PANTALLA ESTANDAR DE lg */
+@media only screen and (min-width:960px) {}
+
+
+/* PANTALLA ESTANDAR DE xl */
+@media only screen and (min-width:1140px) {}
+
+
