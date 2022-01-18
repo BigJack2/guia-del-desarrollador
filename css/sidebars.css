@@ -43,7 +43,16 @@ body::-webkit-scrollbar-thumb {
   #menu-content {
     width: 250px;
     min-height: 250px;
-    max-height: 780px;
+    max-height: 628px;
+    position: fixed;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  #menu-content {
+    width: 250px;
+    min-height: 250px;
+    max-height: 938px;
     position: fixed;
   }
 }
