@@ -70,6 +70,7 @@
                     <li><a href="index.html#laravel" class="link-dark rounded">Comandos Laravel</a></li>
                     <li><a href="index.html#vue" class="link-dark rounded">Comandos Vue</a></li>
                     <li><a href="index.html#vsc" class="link-dark rounded">Atajos Visual Studio Code</a></li>
+                    <li><a href="index.html#git" class="link-dark rounded">Comandos Git</a></li>
                     <li>
                       <a href="https://sass-lang.com/guide" class="link-dark rounded" target="_blank"
                         >Comandos Sass Css <i class="bx bx-exit"></i
@@ -129,6 +130,36 @@
                   </ul>
                 </div>
               </li>
+
+              <li class="mb-1">
+                <button
+                  class="btn btn-toggle align-items-center rounded collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#js-collapse"
+                  aria-expanded="false"
+                >
+                  JavaScript
+                </button>
+                <div class="collapse" id="js-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="javascript.html#qjs" class="link-dark rounded">¿Que es JavaScript?</a></li>
+                    <li><a href="javascript.html#qhjs" class="link-dark rounded">¿Qué hace JavaScript?</a></li>
+
+                    <li><a href="javascript.html#historia" class="link-dark rounded">Historia</a></li>
+                    <li><a href="javascript.html#variables" class="link-dark rounded">Tipos de variables</a></li>
+
+                    <li><a href="javascript.html#tdatos" class="link-dark rounded">Tipos de datos</a></li>
+                    <li><a href="javascript.html#ologicos" class="link-dark rounded">Operadores lógicos</a></li>
+                    <li><a href="javascript.html#obasicas" class="link-dark rounded">Operaciones Basicas</a></li>
+                    <li><a href="javascript.html#expresiones" class="link-dark rounded">Expresiónes</a></li>
+                    <li><a href="javascript.html#funciones" class="link-dark rounded">Funciones</a></li>
+                    <li><a href="javascript.html#case" class="link-dark rounded">Switch Case</a></li>
+                    <li><a href="javascript.html#prompt" class="link-dark rounded">Prompt</a></li>
+                    <li><a href="javascript.html#dom" class="link-dark rounded">DOM</a></li>
+                  </ul>
+                </div>
+              </li>
+
               <li class="mb-1">
                 <button
                   class="btn btn-toggle align-items-center rounded collapsed"
@@ -578,6 +609,275 @@
                 target="_blank"
                 href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf"
                 >Ir a Atajos de teclado VSC <i class="bx bx-exit"></i
+              ></a>
+            </div>
+          </div>
+
+          <hr class="text-color2 my-3" />
+
+          <div id="git" class="row text-center py-3">
+            <h3 class="text-color1 fw-bold fuente1 pt-5 pb-2">
+              Comandos Git
+              <img width="40px" style="margin-left: 14px" src="img/icons/git-icon.svg" />
+            </h3>
+            <div class="col-sm-12 col-xl-6 p-5">
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git help</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">Ayuda sobre los comandos.</figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git version</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">Ver la version de Git.</figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git config --global init.defaultBranch main</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Cambia la branch de master a main.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">
+                    git config --global user.name "mi nombre" <br />
+                    git config --global user.email "myemail@example.com"
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Para iniciar sesion de GitHub en Git.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">ssh-keygen</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Genera las llaves de Git en el pc.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">cat ~/.ssh/id_rsa.pub</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  muestra clave encliptada con la cual github reconocera nuestro pc
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git init</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Inicializa la carpeta como repositorio.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git remote add origin git@github.com:BigJack2/Prueba-Ramas.git</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Linkea la carpeta con el repositorio.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git add .</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Mapea los archivos que se van a subir al repositorio
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git status</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Valida los archivos mapeados con git add .
+                </figcaption>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Si cambio algun archivo con git status valido los archivos que fueron modificados.
+                </figcaption>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  /Cuando hay cambios volvemos a correr git add, git status y gist push.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git fetch origin main</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Revisa lo que hay en la rama en este caso la main.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git pull origin main</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Descarga lo que hay en la rama en este caso main.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git commit -m "Mi primer commit"</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Crear commit (fotografía del proyecto en ese momento)
+                </figcaption>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Commit es una especie de comentario referente al cambio subido.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git push -u origin main</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Sube los archivos al repositorio de la rama, en este caso de main.
+                </figcaption>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Especificar la rama sobre la que se va a trabajar.
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col-sm-12 col-xl-6 p-5">
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git clone git@github.com:BigJack2/Prueba-Ramas.git</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Clona el repositorio de la rama main, aunque cambie de rama el SSH no cambia.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">cd Prueba-Ramas</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Este no es un comando propio de git.
+                </figcaption>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Pero despues de clonar el repositorio debemos ingresar a la carpeta contenedora.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git remote -v</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Para ver si la url esta bien enlazada, ayuda a ser precabidos ante un error.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git branch --v</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Para ver el repositoio y los commit.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git branch -r</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Cuando estoy seguro que clono bien, muestra las ramas remotas y cual descargamos.
+                </figcaption>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  La rama HEAD hace referencia a la principal main.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git branch nombrerama</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">Copio la rama de manera local</figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git checkout nombrerama</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Arroja advertencia en caso de que haya problema con alguna rama y cambiamos a la rama.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git pull -u origin</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Cuando trabajemos en una rama compartida <strong>DEBEMOS USAR ESTE COMANDO</strong>, De lo contrario
+                  subiremos nuestros archivos <strong>sobreescribiendo toda la rama</strong> sin tener en cuenta los
+                  cambios hechos por otros compañeros.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git push -u origin nombrerama</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Cargamos los archivos locales de la rama a la nube
+                </figcaption>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  <strong>ANTES DE CARGAR</strong> la rama es importante hacer un ckeckout.
+                </figcaption>
+              </figure>
+
+              <figure class="text-start">
+                <blockquote class="blockquote">
+                  <p class="text-color2 fw-bold">git merge nombrerama</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Asi combinamos la rama individual con la que trabajamos en comun con otros compañeros.
+                </figcaption>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  los +++ verdes son cosas que se agregaron y --- rojos son cosas que se quitaron.
+                </figcaption>
+                <figcaption class="blockquote-footer text-color5 fst-italic">
+                  Cuando hay un archivo en el cual varios usuarios hicieron cambios y todos estos cambios se
+                  integraron/combinaron deberemos revisar a mano que quitar o ajustar, para finalmente hacer un git pull
+                  y subir todo.
+                </figcaption>
+              </figure>
+
+              <br />
+              <br />
+              <a
+                class="btn btn-primary btn-lg"
+                style="margin-top: 5px"
+                target="_blank"
+                href="https://github.com/sanchezcode/Guide_GIT_Windows"
+                >Guia Git Andres Sanchez <i class="bx bx-exit"></i
+              ></a>
+              <a class="btn btn-primary btn-lg" style="margin-top: 5px" target="_blank" href="https://git-scm.com/"
+                >Ir al Instalador de Git <i class="bx bx-exit"></i
               ></a>
             </div>
           </div>

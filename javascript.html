@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+
+    <title>Guia Jhon Vanegas</title>
+    <link rel="shortcut icon" href="img/icons/laravel.ico" />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Fuentes ubuntu de google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/sidebars.css" rel="stylesheet" />
+
+    <!-- Custom styles for this icons -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/estilos.css" rel="stylesheet" />
+
+    <style></style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-lg-3 col-xl-3 col-xxl-2 overflow-auto">
+          <div id="menu-content" class="flex-shrink-3 sticky-top overflow-auto">
+            <a
+              href="index.html"
+              class="d-flex align-items-center py-3 mb-3 link-dark text-decoration-none border-bottom"
+            >
+              <img width="35px" style="margin-left: 14px" src="img/icons/laravel.svg" />
+              <img width="35px" style="margin-left: 10px" src="img/icons/vue.svg" />
+              <img width="35px" style="margin-left: 10px" src="img/icons/bootstrap.svg" />
+              <img width="35px" style="margin-left: 10px" src="img/icons/visual-studio-code.svg" />
+              <img width="35px" style="margin-left: 10px" src="img/icons/sass.svg" />
+            </a>
+
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <button
+                  class="btn btn-toggle align-items-center rounded collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#home-collapse"
+                  aria-expanded="true"
+                >
+                  Comandos
+                </button>
+                <div class="collapse" id="home-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="index.html#laravel" class="link-dark rounded">Comandos Laravel</a></li>
+                    <li><a href="index.html#vue" class="link-dark rounded">Comandos Vue</a></li>
+                    <li><a href="index.html#vsc" class="link-dark rounded">Atajos Visual Studio Code</a></li>
+                    <li><a href="index.html#git" class="link-dark rounded">Comandos Git</a></li>
+                    <li>
+                      <a href="https://sass-lang.com/guide" class="link-dark rounded" target="_blank"
+                        >Comandos Sass Css <i class="bx bx-exit"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://bluuweb.github.io/desarrollo-web-bluuweb/07-01-git/#enlaces"
+                        class="link-dark rounded"
+                        target="_blank"
+                        >Comandos Git Bluuweb <i class="bx bx-exit"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://bluuweb.github.io/desarrollo-web-bluuweb/07-00-terminal/"
+                        class="link-dark rounded"
+                        target="_blank"
+                        >Comandos CMD Bluuweb <i class="bx bx-exit"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button
+                  class="btn btn-toggle align-items-center rounded collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#css-collapse"
+                  aria-expanded="false"
+                >
+                  Css
+                </button>
+                <div class="collapse" id="css-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="css.html#css" class="link-dark rounded">Clases genericas</a></li>
+                    <li>
+                      <a href="css.html#clases" class="link-dark rounded"
+                        >Descargar clases <i class="bx bxs-download"></i
+                      ></a>
+                    </li>
+                    <li><a href="css.html#tabla" class="link-dark rounded">Tabla</a></li>
+                    <li><a href="css.html#fantasma" class="link-dark rounded">Boton fantasma</a></li>
+                    <li><a href="css.html#link" class="link-dark rounded">Boton Link</a></li>
+                    <li><a href="css.html#paginador" class="link-dark rounded">Boton paginador</a></li>
+                    <li><a href="css.html#file" class="link-dark rounded">Boton File</a></li>
+                    <li>
+                      <a href="http://www.menucool.com/tooltip/css-tooltip" target="_blank" class="link-dark rounded"
+                        >Tooltips <i class="bx bx-exit"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="link-dark rounded"
+                        >W3schools <i class="bx bx-exit"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="mb-1">
+                <button
+                  class="btn btn-toggle align-items-center rounded collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#js-collapse"
+                  aria-expanded="false"
+                >
+                  JavaScript
+                </button>
+                <div class="collapse" id="js-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="javascript.html#qjs" class="link-dark rounded">¿Que es JavaScript?</a></li>
+                    <li><a href="javascript.html#qhjs" class="link-dark rounded">¿Qué hace JavaScript?</a></li>
+
+                    <li><a href="javascript.html#historia" class="link-dark rounded">Historia</a></li>
+                    <li><a href="javascript.html#variables" class="link-dark rounded">Tipos de variables</a></li>
+
+                    <li><a href="javascript.html#tdatos" class="link-dark rounded">Tipos de datos</a></li>
+                    <li><a href="javascript.html#ologicos" class="link-dark rounded">Operadores lógicos</a></li>
+                    <li><a href="javascript.html#obasicas" class="link-dark rounded">Operaciones Basicas</a></li>
+                    <li><a href="javascript.html#expresiones" class="link-dark rounded">Expresiónes</a></li>
+                    <li><a href="javascript.html#funciones" class="link-dark rounded">Funciones</a></li>
+                    <li><a href="javascript.html#case" class="link-dark rounded">Switch Case</a></li>
+                    <li><a href="javascript.html#prompt" class="link-dark rounded">Prompt</a></li>
+                    <li><a href="javascript.html#dom" class="link-dark rounded">DOM</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="mb-1">
+                <button
+                  class="btn btn-toggle align-items-center rounded collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#instal-collapse"
+                  aria-expanded="false"
+                >
+                  Instaladores
+                </button>
+                <div class="collapse" id="instal-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="instaladores.html#instaladores" class="link-dark rounded">Xampp</a></li>
+                    <li><a href="instaladores.html#vue2" class="link-dark rounded">Vuejs</a></li>
+                    <li><a href="instaladores.html#laravel2" class="link-dark rounded">Laravel y Composer</a></li>
+                    <li><a href="instaladores.html#vscode" class="link-dark rounded">Configuración VSC</a></li>
+                    <li>
+                      <a href="https://rubyinstaller.org/downloads/" class="link-dark rounded" target="_blank"
+                        >Ruby Instaler para Sass Css <i class="bx bx-exit"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="border-top my-3"></li>
+
+              <li class="mb-1">
+                <button
+                  class="btn btn-toggle align-items-center rounded collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#drive-collapse"
+                  aria-expanded="false"
+                >
+                  Material de apoyo
+                </button>
+                <div class="collapse" id="drive-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li>
+                      <a href="material_de_apoyo.html#tutoriales" class="link-dark rounded">Tutoriales</a>
+                    </li>
+                    <li>
+                      <a href="material_de_apoyo.html#marcadores" class="link-dark rounded">Marcadores</a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://drive.google.com/drive/folders/0B1R6zq7kCgNAcW03ajhCQUpnSmM?resourcekey=0-gs5HhVQFzYaZKYItQBcmlg&usp=sharing"
+                        target="_blank"
+                        class="link-dark rounded"
+                        >Plantillas Drive <i class="bx bx-exit"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://drive.google.com/drive/folders/1NTtfJJFlc6S6LFbxwE94ay2JyafMUkeG?usp=sharing"
+                        target="_blank"
+                        class="link-dark rounded"
+                        >Programas Drive <i class="bx bx-exit"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://drive.google.com/drive/folders/0B1R6zq7kCgNAQU5PUUV0R2hrVDg?resourcekey=0-lB6JlQEoZtPX8F8yy6Ov3g&usp=sharing"
+                        target="_blank"
+                        class="link-dark rounded"
+                        >Corel Draw Drive <i class="bx bx-exit"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="border-top my-3"></li>
+
+              <li class="mb-1">
+                <button
+                  class="btn btn-toggle align-items-center rounded collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#github-collapse"
+                  aria-expanded="false"
+                >
+                  Github Pages
+                </button>
+                <div class="collapse" id="github-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li>
+                      <a
+                        href="https://bigjack2.github.io/pruebaboostrap5.github.io/"
+                        target="_blank"
+                        class="link-dark rounded"
+                        >Demo Bootstrap 5 <i class="bx bx-exit"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://bigjack2.github.io/portafolio_vanegas.github.io/"
+                        target="_blank"
+                        class="link-dark rounded"
+                        >Portafolio web <i class="bx bx-exit"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-9 col-xl-9 col-xxl-10 pt-2 text-center">
+          <div class="row justify-content-center py-3">
+            <h3 class="text-center fw-bold fuente1 text-color2 pt-5 pb-2">
+              JavaScript <img width="40px" style="margin-left: 14px" src="img/icons/javascript.svg" />
+            </h3>
+            <div id="qjs" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Que es JavaScript?</h3>
+              <p style="text-align: justify">
+                <strong>JavaScript es un lenguaje de programación o de secuencias de comandos</strong> que te permite
+                implementar funciones complejas en páginas web, cada vez que una página web hace algo más que sentarse
+                allí y mostrar información estática para que la veas, muestra oportunas actualizaciones de contenido,
+                mapas interactivos, animación de Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo, etc.
+              </p>
+            </div>
+            <div id="qhjs" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué hace JavaScript en tu página?</h3>
+              <p style="text-align: justify">
+                Un uso muy común de JavaScript es modificar
+                <strong>dinámicamente HTML y CSS para actualizar una interfaz de usuario</strong>, a través de la API
+                del modelo de objetos del documento. Ten en cuenta que el código de tus documentos web generalmente se
+                cargan y ejecutan en el orden en que aparece en la página. Si
+                <strong>JavaScript se carga e intenta ejecutarse antes</strong> de que se hayan cargado el HTML y el CSS
+                al que afecta.
+              </p>
+              <br />
+              <a
+                class="btn btn-warning btn-lg"
+                target="_blank"
+                href="https://developer.mozilla.org/es/docs/Learn/JavaScript"
+                >Derveloper Mozilla JavaScript <i class="bx bx-exit"></i
+              ></a>
+            </div>
+            <div id="historia" class="col-sm-12 col-xl-8 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">Un poco de historia</h3>
+              <p style="text-align: justify">
+                JavaScript desde sus comienzos no nacio como un lenguaje de escritura rigida en sus variables, por ello
+                es un lenguaje <strong>debilmente tipado</strong> desde sus inicios. <br /><br />
+
+                En 2012 en Javascript no habían clases, ni módulos, el ecosistema carecía de herramientas que
+                optimizaran el flujo de desarrollo, derivado precisamente por las carencias del lenguaje mismo.
+                <br /><br />
+
+                <strong>2012 fue el año en que Typescript apareció (luego de 2 años de desarrollo)</strong>, una
+                solución de <strong>Microsoft</strong> para el desarrollo de aplicaciones con Javascript a gran escala
+                como <strong>Bing y Office 365</strong> despertaron en Microsoft la necesidad de una mejora a JavaScript
+                que permitiera construir productos escalables. <br /><br />
+
+                <strong>Typescript</strong> es la solución a muchos de los problemas de JavaScript, está pensado para el
+                desarrollo de aplicaciones robustas, implementando características en el lenguaje que nos permitan
+                desarrollar herramientas más avanzadas para el desarrollo de aplicaciones. <br /><br />
+
+                <img style="width: 150px; display: block; margin: auto" src="img/icons/javascript.svg" />
+              </p>
+            </div>
+
+            <h3 id="variables" class="text-color2 fw-bold fuente1 pt-5 pb-5">var / let y const</h3>
+
+            <div class="col-sm-12 col-xl-6 p-5">
+              <p style="text-align: justify">
+                JavaScript posee diferentes formas de declarar variables, esto como una solucion a su debil tipado,
+                entre las formas posibles de hacerlo tenemos las siguientes:
+                <br /><br />
+
+                <strong>Let:</strong> es un tipo de variable que no permite sobrrescribir su valor cuando esta se vuelve
+                a declarar pero permite que se declare una variable tipo var con el mismo nombre. <br /><br />
+
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=monokai&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=5px&ph=4px&ln=false&fl=1&fm=MonoLisa&fs=18px&lh=148%25&si=false&es=4x&wm=false&code=let%2520nombre%2520%253D%2520%2522Sebastian%2522%253B%250A%250A%252F%252FSi%2520declaras%2520nuevamente%2520su%2520variable%2520marcara%2520error%252C%2520por%2520ende%2520deberas%2520borrarla.%250Alet%2520nombre%2520%253D%2520%2522Jhon%2522%253B%250A%250A%252F%252FSi%2520omites%2520let%2520esta%2520variable%2520sera%2520interpretada%2520como%2520var%2520y%2520JS%2520permite%2520que%2520existan%2520dos%2520variables%2520del%2520mismo%2520nombre%2520pero%2520difernete%2520tipado.%250Anombre%2520%253D%2520%2522Sebastian%2522%253B%250A%250A%252F%252FDeclara%2520una%2520nueva%2520variable%2520para%2520que%2520no%2520haya%2520interferencia.%250Alet%2520nombreusuario%2520%253D%2520%2522Pepe%2522%253B"
+                  style="width: 100%; height: 477px; border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </p>
+            </div>
+
+            <div class="col-sm-12 col-xl-6 p-5">
+              <p style="text-align: justify">
+                <strong>Var:</strong> ya casi no se usa ya que es un tipo de variable que se puede sobreescribir a lo
+                largo del documento, por ende no es segura aunque bien usada puede ser bastante dinamica. <br /><br />
+
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=monokai&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=5px&ph=4px&ln=false&fl=1&fm=MonoLisa&fs=18px&lh=148%25&si=false&es=4x&wm=false&code=var%2520nombre%2520%253D%2520%2522Sebastian%2522%253B%250A%250A%252F%252Fmostrara%2520en%2520consola%2520Sebastian%250Aconsole.log%28nombre%29%253B%250A%250A%252F%252FCuando%2520una%2520variable%2520no%2520esta%2520tipada%2520con%2520%2522car%252Flet%2520%25C3%25B3%2520const%2522%2520automaticamente%2520le%2520pone%2520var%250Anombreusuario%2520%253D%2520%2522Pepe%2522%253B"
+                  style="width: 100%; height: 350px; border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+
+                <strong>Const:</strong> Es un tipo de mvariable cuyo valor no se remplaza o sobreescribe jamas,a
+                diferencia de let este NO permite que se declare otra variable de diferente tipo pero con el mismo
+                nombre.para const las variables van en mayuscula sostenida. <br /><br />
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=monokai&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=5px&ph=4px&ln=false&fl=1&fm=MonoLisa&fs=18px&lh=148%25&si=false&es=4x&wm=false&code=const%2520NOMBRE%2520%253D%2520%2522Sebastian%2522%253B%250ANOMBRE%2520%253D%2520%2522Pepe%2522%253B%250A%252F%252Fmarca%2520error%2520si%2520vamos%2520a%2520sobreescribir%2520una%2520variable%2520aunque%2520esta%2520sea%2520tipada%2520como%2520var."
+                  style="width: 100%; height: 240px; border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </p>
+            </div>
+            <div id="tdatos" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">Tipos de datos</h3>
+              <p style="text-align: justify">
+                <strong>JavaScript </strong> posse tipos de datos entre los cuales los mas usados son tambien conocidos
+                como Primitivos o Basicos y son: <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> String:</strong> Cadena de texto o caracteres. <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> Number:</strong> Enteros y decimales. <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> Bolean:</strong> True-False. <br /><br />
+                <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=monokai&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=5px&ph=4px&ln=false&fl=1&fm=MonoLisa&fs=18px&lh=148%25&si=false&es=4x&wm=false&code=let%2520nombre%2520%253D%2520%2522Jhon%2522%253B%252F%252Fstring%250Alet%2520edad%2520%253D%252028%253B%252F%252Fnumber%2520entero%250Alet%2520sueldo%2520%253D%2520500.9%253B%252F%252Fnumber%2520decimal%250Alet%2520pregunta%2520%253D%2520true%253B%252F%252FBolean"
+                  style="width: 100%; height: 191px; border: 0; transform: scale(1); overflow: hidden"
+                  sandbox="allow-scripts allow-same-origin"
+                >
+                </iframe>
+              </p>
+            </div>
+            <div id="ologicos" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">Operadores lógicos</h3>
+              <p style="text-align: justify">
+                Existen operadores lógicos que aplican en los bucles para hacer comparaciones y son:
+                <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> igualdad en contenido , == </strong>
+                <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> igualdad en tipo de variable y contenido, === </strong>
+                <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> negación, ! </strong>
+                <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> «no igual que«, != </strong>
+                <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> and, && </strong>
+                <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> or, || </strong>
+                <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> >= , mayor que o igual; <, menor que </strong>
+                <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> <= , menor que o igual; >, mayor que </strong>
+              </p>
+            </div>
+            <div id="obasicas" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">Operaciones Básicas</h3>
+              <p style="text-align: justify">
+                Las operaciones básicas que los números admiten son:
+                <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> Suma , +</strong>
+                <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> Resta, –</strong>
+                <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> Multiplicación, *</strong>
+                <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> División, /</strong>
+                <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> Operación módulo (el resto de la división) %</strong>
+              </p>
+            </div>
+            <div id="expresiones" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">Expresiónes</h3>
+              <p style="text-align: justify">
+                Existen expresiones también que en realidad son abreviaciones de otras expresiones más largas y son:
+                <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> x++ </strong> equivale a x = x + 1; <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> ++x </strong> equivale a x = x + 1; <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> x– </strong> equivale a x = x – 1; <br /><br />
+                <strong><i class="bx bx-chevron-right"></i> –x </strong> equivale a x = x – 1;
+              </p>
+            </div>
+            <div id="funciones" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">Funciones</h3>
+              <p style="text-align: justify">
+                Una función es una estructura de código que ejecuta y transforma unos inputs de entrada en un output de
+                salida en forma de dato o acción.
+                <br /><br />
+
+                <strong>function:</strong> Es una palabra reservada que precede el nombre que vamos a dar a la función
+                para referirnos a ella. <br /><br />
+
+                <strong>() los paréntesis:</strong> Contienen las variables que van a almacenar los inputs que se le
+                hayan enviado a la función (cuando llamemos una función desde un script se entenderá mejor). Es
+                importante tener en cuenta que no es necesario que las variables que le pasemos via el script principal
+                tengan el mismo nombre dentro de la función. <br /><br />
+
+                <strong>{ } las llaves:</strong> Contienen las instrucciones que va a ejecutar la función. Dentro de la
+                función podemos programar exactamente que lo haríamos. <br /><br />
+
+                <strong>return:</strong> Es una variable reservada. Sólo puede devolver un valor o variable.
+              </p>
+              <br />
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=monokai&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=5px&ph=4px&ln=false&fl=1&fm=MonoLisa&fs=18px&lh=148%25&si=false&es=4x&wm=false&code=%252F%252FFunciones%2520normales.%250Afunction%2520sumar%2520%28%29%257B%250A%2520%2520console.log%2810%29%250A%257D%250Asumar%28%29%253B%250A%250A%252F%252FFunciones%2520de%2520flecha%252C%2520cuando%2520no%2520hay%2520parametros%2520hay%2520que%2520usar%2520%28%29%250Aconst%2520sumarDos%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520console.log%2820%29%250A%257D%250AsumarDos%28%29%250A%250A%252F%252FPASANDO%2520PARAMETROS%2520mediante%2520variables.%250Afunction%2520sumar%2520%28num%29%257B%250A%2520%2520console.log%28num%29%250A%257D%250Asumar%2810%29%253B%250A%250A%252F%252FFunciones%2520de%2520flecha%2520%250A%252F%252Fuando%2520pasamos%2520una%2520variable%2520como%2520parametro%2520podemos%2520omitir%2520los%2520%28%29.%250Aconst%2520sumarDos%2520%253D%2520num%2520%253D%253E%2520%257B%250A%2520%2520console.log%28num%29%250A%257D%250AsumarDos%2820%29%250A%250A%252F%252Fpero%2520si%2520es%2520mas%2520de%2520un%2520parametro%2520si%2520es%2520necesario%2520poner%2520%28%29%250Aconst%2520sumarDos%2520%253D%2520%28num1%252C%2520num2%29%2520%253D%253E%2520%257B%250A%2520%2520console.log%28num1%2520%252B%2520num2%29%250A%257D%250AsumarDos%2820%252C%252030%29%250A%250A%252F%252FSo%2520lo%2520que%2520quiero%2520es%2520sumar%2520entonces%2520uso%2520return%250A%252F%252FHhay%2520casos%2520en%2520los%2520que%2520se%2520pueden%2520omitir%2520los%2520%257B%257D%250Aconst%2520sumarDos%2520%253D%2520%28num1%252C%2520num2%29%2520%253D%253E%2520%28num1%2520%252B%2520num2%29%250Aconst%2520resultado%2520%253D%2520sumarDos%2820%252C%252030%29%250Aconsole.log%28resultado%29"
+                style="width: 100%; height: 1063px; border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+            <div class="col-sm-12 col-xl-6 p-5">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=monokai&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=5px&ph=4px&ln=false&fl=1&fm=MonoLisa&fs=18px&lh=148%25&si=false&es=4x&wm=false&code=%252F**%250A%2520*%2520SWITCH%2520CASE%250A%2520*%2520No%2520compara%2520datos%2520con%2520operadores%2520logicos%2520%253D%2520%253D%252C%2520%253E%2520%253C%250A%2520*%2520solo%2520valida%2520un%2520caso%2520de%2520igual%252C%2520si%2520es%2520o%2520no%2520es%252C%2520se%2520usa%2520aveces%2520para%2520no%2520usar%2520if%2520anidados%250A*%252F%250Alet%2520ciudad%2520%253D%2520prompt%28%2522Ingresa%2520tu%2520ciudad%2522%29%253B%250A%250Aswitch%2520%28ciudad%29%2520%257B%250A%2520%2520case%2520%2522bogota%2522%253A%250A%2520%2520%2520%2520alert%28%2522Ciudad%2520frio%2522%29%253B%250A%2520%2520%2520%2520break%253B%250A%250A%2520%2520case%2520%2522armenia%2522%253A%250A%2520%2520%2520%2520alert%28%2522Ciudad%2520templado%2522%29%253B%250A%2520%2520%2520%2520break%253B%250A%250A%2520%2520case%2520%2522cali%2522%253A%250A%2520%2520%2520%2520alert%28%2522Ciudad%2520caliente%2522%29%253B%250A%2520%2520%2520%2520break%253B%250A%250A%2520%2520default%253A%250A%2520%2520%2520%2520alert%28%2522catalogo%2520Bloqueado%2522%29%250A%2520%2520%2520%2520break%253B%250A%257D"
+                style="width: 100%; height: 770px; border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+                id="case"
+              >
+              </iframe>
+
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=monokai&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=5px&ph=4px&ln=false&fl=1&fm=MonoLisa&fs=18px&lh=148%25&si=false&es=4x&wm=false&code=%252F**prompt%2520es%2520un%2520alert%2520con%2520un%2520cuadro%2520de%2520texto%2520para%2520digitar%250A%2520*%2520datos%2520y%2520guardarlo%2520en%2520la%2520variable%250A%2520*%2520Tolowercase%2520funciona%2520para%2520que%2520el%2520texto%2520digitado%2520siempre%2520quede%2520en%250A%2520*%2520minuscula%2520en%2520caso%2520de%2520que%2520el%2520usuario%2520use%2520mayuscula%250A*%252F%250Alet%2520dia%2520%253D%2520prompt%28%2522Ingrese%2520un%2520dia%2520de%2520la%2520semana%2522%29.toLowerCase%28%29%253B"
+                style="width: 100%; height: 290px; border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+                id="prompt"
+              >
+              </iframe>
+
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=monokai&wt=none&l=javascript&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=5px&ph=4px&ln=false&fl=1&fm=MonoLisa&fs=18px&lh=148%25&si=false&es=4x&wm=false&code=%252F%252FDOM%250A%252F%252FPermite%2520modificar%2520o%2520manipular%2520html%2520y%2520css%2520desde%2520JS%250A%252F%252Fdocument%2520hace%2520referencia%2520al%2520html%2520que%2520invoca%2520este%2520archivo%2520js%250A%252F%252Fllamas%2520el%2520boton%2520por%2520medio%2520del%2520id%2520obtenido%2520del%2520html%2520que%2520esta%2520invocando%2520este%2520JS%250Alet%2520ejecutar%2520%253D%2520document.getElementById%28%2522btnEjecutar%2522%29%253B%250A%250Alet%2520nombreUser%2520%253D%2520document.getElementById%28%2522nombreUsuario%2522%29%253B%250A%250A%252F%252FSe%2520puede%2520cambiar%2520function%28%29%2520por%2520%28%29%253D%253E%2520ya%2520que%2520asi%2520se%2520puede%2520guardar%2520una%2520funcion%2520dentro%2520de%2520una%2520variable%250Aconst%2520cambiarNombre%2520%253D%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520let%2520nombre%2520%253D%2520prompt%28%2522Ingresa%2520tu%2520nombre%2522%29%253B%250A%2520%2520%252F%252Finner%2520permite%2520cambiar%2520el%2520dato%2520que%2520esta%2520dentro%2520del%2520id%2520del%2520html%250A%2520%2520nombreUsuario.innerHTML%253D%2520%2522Bienvenido%253A%2520%2522%2520%252B%2520nombre%253B%250A%2520%2520%252F%252Flocalstorage%2520se%2520usa%2520para%2520guardar%2520el%2520dato%2520en%2520el%2520navegador%2520como%2520un%2520dato%2520persistente%250A%2520%2520%252F%252Fset%2520es%2520guardar%2520y%2520get%2520es%2520obtener%250A%2520%2520localStorage.setItem%28%2522nombre%2522%252C%2520nombre%29%253B%250A%257D%250A%250A%252F%252FSi%2520si%2520hay%2520algo%2520en%2520el%2520localstorage%250Aif%2520%28localStorage.getItem%28%2522nombre%2522%29%29%2520%257B%250A%2520%2520%252F%252Fle%2520concateno%2520el%2520dato%2520guardado%2520en%2520el%2520item%2520nombre%2520del%2520localstorage%250A%2520%2520%252F%252Fy%2520con%2520inner%2520cambio%2520el%2520dato%2520del%2520html%2520por%2520el%2520del%2520localstorage%250A%2520%2520nombreUsuario.innerHTML%253D%2520%2522Bienvenido%253A%2520%2522%2520%252B%2520localStorage.getItem%28%2522nombre%2522%29%253B%250A%257D%2520%250A%250A%252F%252FEventos%2520se%2520recomiendan%2520que%2520vayan%2520al%2520final%250Aejecutar.onclick%2520%253D%2520%28%29%2520%253D%253E%257B%250A%2520%2520cambiarNombre%2520%28%29%253B%250A%257D"
+                style="width: 100%; height: 1109px; border: 0; transform: scale(1); overflow: hidden"
+                sandbox="allow-scripts allow-same-origin"
+                id="dom"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
