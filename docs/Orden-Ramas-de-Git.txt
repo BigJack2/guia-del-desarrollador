@@ -1,0 +1,75 @@
+Orden Comandos Git LIDER
+Solo trabajo en la rama main
+git init
+git remote add origin git@github.com:BigJack2/Prueba-Ramas.git
+git pull origin main
+git add .
+git status
+git commit -m "Mi primer commit"
+git push -u origin main
+
+Las ramas se crean despues de haber alimentado la main, estas se crean ya con el contenido copiado
+
+Orden Comandos Git USER1
+git clone git@github.com:BigJack2/Prueba-Ramas.git
+entramos a la carpeta contenedora que se crea con el nombre del repositorio
+git remote -v
+git branch --v
+git branch -r
+git branch rama1
+git checkout rama1
+git status
+git add .
+git status
+git commit -m "Mi primer commit user 1"
+$ git push -u origin rama1
+// Hasta este punto ambos tienen alimentada sus ramas.
+// Pero en caso de que hayan cambios recientes en la rama developer se debe hacer lo siguiente.
+git checkout developer// De aqui en adelante trabajaremos con la rama developer.
+git pull origin developer
+git merge rama1 // Estando en la rama developer importamos los cambios de la rama 1.
+                // Nos alertara de un archivo donde varios esten trabajando.
+//Nos mostrara que estamos trabajando sobre la rema developer pero en estado merge.
+//La rama se mostrara de la siguiente forma (developer|MERGING).
+git add .  //Debemos agregar los cambios detectados que se subiran a dveloper desde la rama1.
+git pull origin developer // Validamos por ultima vez que no hayan cambios recientes por traer.
+git commit -m "Integramos rama1 a developer"
+git push origin developer
+
+
+Orden Comandos Git USER2
+git clone git@github.com:BigJack2/Prueba-Ramas.git
+entramos a la carpeta contenedora que se crea con el nombre del repositorio
+git remote -v
+git branch --v
+git branch -r
+git branch rama2
+git checkout rama2
+git status
+git add .
+git status
+git commit -m "Mi primer commit user 2"
+$ git push -u origin rama2
+// Hasta este punto ambos tienen alimentada sus ramas.
+// Pero en caso de que hayan cambios recientes en la rama developer se debe hacer lo siguiente.
+git checkout developer// De aqui en adelante trabajaremos con la rama developer.
+git pull origin developer
+git merge rama2 // Estando en la rama developer importamos los cambios de la rama 2.
+                // Nos alertara de un archivo donde varios esten trabajando.
+// Nos mostrara que estamos trabajando sobre la rema developer pero en estado merge.
+// La rama se mostrara de la siguiente forma (developer|MERGING).
+git add .  // Debemos agregar los cambios detectados que se subiran a dveloper desde la rama2.
+git pull origin developer // validamos por ultima vez que no hayan cambios recientes por traer.
+git commit -m "Integramos rama2 a developer"
+git push origin developer
+
+Orden Comandos Git LIDER
+//A continuacion el lider copiara la rama developer(ya validada y estable) a la rama main
+git branch developer
+git branch // Deben ser visibles las ramas main y dveloper
+git checkout developer
+git pull origin developer //descargamos lo que este en developer
+git checkout main //cambiamos a la rama main
+git merge developer //estando ubicados en la ram main traemos los camios de developer
+                    //A diferencia de developer esta no se pone en estado MERGING
+git push -u origin main
