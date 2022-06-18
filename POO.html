@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+
+    <title>Guia Jhon Vanegas</title>
+    <link rel="shortcut icon" href="img/icons/laravel.ico" />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Fuentes ubuntu de google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/sidebars.css" rel="stylesheet" />
+
+    <!-- Custom styles for this icons -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/estilos.css" rel="stylesheet" />
+
+    <style></style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Este menu esta en JavaScript -->
+        <div class="col-sm-12 col-lg-3 col-xl-3 col-xxl-2 overflow-auto">
+          <div id="menu-content" class="flex-shrink-3 sticky-top overflow-auto">
+            <div id="jsMenu"></div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-9 col-xl-9 col-xxl-10 pt-2 text-center">
+          <div class="row justify-content-center py-3">
+            <h3 class="text-center fw-bold fuente1 text-color2 pt-5 pb-2">Programacion Orientada a Objetos</h3>
+            <div id="poo" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es POO?</h3>
+              <p style="text-align: justify">
+                La Programación Orientada a Objetos <strong>(POO)</strong> es un paradigma de programación, es decir,
+                <strong>un modelo o un estilo de programación</strong> que nos da unas guías sobre cómo trabajar con él. Se basa
+                en el concepto de <strong>clases y objetos</strong>. Este tipo de programación se utiliza para estructurar un
+                programa de software en piezas simples y reutilizables de planos de código (clases) para crear instancias
+                individuales de objetos. <br /><br />
+              </p>
+
+              <h3 id="beneficios" class="text-color2 fw-bold fuente1 pt-5 pb-5">
+                Beneficios de Programación Orientada a Objetos
+              </h3>
+              <p style="text-align: justify">
+                <i style="font-weight: bold" class="bx bx-chevron-right"></i> <strong>Reutilización</strong> del código.<br /><br />
+                <i style="font-weight: bold" class="bx bx-chevron-right"></i> Convierte cosas complejas en
+                <strong>estructuras simples reproducibles</strong>.<br /><br />
+                <i style="font-weight: bold" class="bx bx-chevron-right"></i> Evita la
+                <strong>duplicación de código</strong>.<br /><br />
+                <i style="font-weight: bold" class="bx bx-chevron-right"></i> Permite <strong>trabajar en equipo</strong> gracias
+                al encapsulamiento ya que minimiza la posibilidad de duplicar funciones cuando varias personas trabajan sobre un
+                mismo objeto al mismo tiempo.<br /><br />
+                <i style="font-weight: bold" class="bx bx-chevron-right"></i> Al estar la clase bien estructurada permite la
+                <strong>corrección de errores</strong> en varios lugares del código.<br /><br />
+                <i style="font-weight: bold" class="bx bx-chevron-right"></i> <strong>Protege la información</strong> a través de
+                la encapsulación, ya que solo se puede acceder a los datos del objeto a través de propiedades y métodos
+                privados.<br /><br />
+                <i style="font-weight: bold" class="bx bx-chevron-right"></i> La abstracción nos permite
+                <strong>construir sistemas más</strong>
+                complejos y de una forma más sencilla y organizada.
+              </p>
+            </div>
+            <div id="definiciones" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">
+                Antes de empezar a comprender POO tengamos en cuenta lo siguiente:
+              </h3>
+              <p style="text-align: justify">
+                <strong>Deuda técnica:</strong>
+                <br /><br />
+                La deuda técnica es el coste y los intereses a pagar por hacer mal las cosas. El sobre esfuerzo a pagar para
+                mantener un producto software mal hecho, y lo que conlleva, como el coste de la mala imagen frente a los clientes,
+                etc.
+                <br /><br />
+                <strong>Code smell:</strong>
+                <br /><br />
+                Hace referencia al mal olor del código. Este concepto no se refiere a errores técnicos, sino a errores de orden y
+                diseño. Esto sucede mucho cuando intentamos crear soluciones a partir de otras soluciones. La solución a estos
+                casos es crear una abstracción. Cómo evitarlo Para esto debemos hacer una programación más limpia, y reusable.
+                Tenemos que evitar crear grandes métodos, o sea, programación estructura dentro de clases. También evitar crear
+                grandes clases o superclases. Y sin duda, nosotros debemos evitar a toda costa copiar y pegar código.
+                <br /><br />
+                <strong>Código espagueti:</strong>
+                <br /><br />
+                Se llama "código espagueti" a un código que se caracteriza por ser muy largo, monolítico (no está dividido en
+                partes) y presenta saltos de un punto a otro demasiado confusos para ser comprendido por otros programadores. Es
+                largo, sin cortar y enredado, como un espagueti.
+              </p>
+            </div>
+            <div id="modularidad" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es modularidad?</h3>
+              <p style="text-align: justify">
+                La modularidad consiste en dividir un programa en módulos que puedan compilarse por separado, sin embargo tendrá
+                conexiones con otros módulos.
+                <br /><br />
+                La modularidad también tiene principios y son los siguientes:
+                <br /><br />
+                <i style="font-weight: bold" class="bx bx-chevron-right"></i> Capacidad de descomponer un sistema complejo.<br /><br />
+                <i style="font-weight: bold" class="bx bx-chevron-right"></i> Capacidad de componer a través de sus módulos.<br /><br />
+                <i style="font-weight: bold" class="bx bx-chevron-right"></i> Comprensión de sistema en partes.
+              </p>
+            </div>
+            <div id="instancia" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es una instancia?</h3>
+              <p style="text-align: justify">
+                Se llama instancia a todo objeto que derive de algún otro. De esta forma, todos los objetos son instancias de
+                algún otro, menos la clase Object que es la madre de todas.
+              </p>
+            </div>
+            <div id="clase" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es una clase?</h3>
+              <p style="text-align: justify">
+                Una clase es una plantilla. Define de manera genérica cómo van a ser los objetos de un determinado tipo. Por
+                ejemplo, una clase para representar a animales puede llamarse ‘animal’
+              </p>
+            </div>
+            <div id="objeto" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es un objeto?</h3>
+              <p style="text-align: justify">
+                Un ejemplo sencillo de un objeto, como decíamos antes, podría ser un animal en este caso nos referimos más a la
+                raza en si como un perro o un gato, y un objeto posee atributos ó propiedades.
+              </p>
+            </div>
+            <div id="atributo" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es un atributo?</h3>
+              <p style="text-align: justify">
+                Un animal tiene una edad, por lo que creamos un nuevo atributo de ‘edad’ y, también puede tener color, tamaño,
+                peso, etc.
+              </p>
+            </div>
+            <div id="metodo" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es un método?</h3>
+              <p style="text-align: justify">
+                método se le llama a un bloque de código que tiene definido en su interior un conjunto de instrucciones, estas
+                instrucciones realizan una determinada tarea. En este caso para los animales sus métodos serian comer y caminar.
+              </p>
+            </div>
+            <div class="col-sm-12 col-xl-8 p-3">
+              <img width="100%" src="./img/png/POO.jpg" />
+            </div>
+            <div id="encapsulacion" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es encapsulación?</h3>
+              <p style="text-align: justify">
+                La encapsulación u ocultación contiene toda la información importante de un objeto dentro del mismo y solo expone
+                la información seleccionada al mundo exterior. Esta propiedad permite asegurar que la información de un objeto
+                esté oculta para el mundo exterior, agrupando en una Clase las características o atributos que cuentan con un
+                acceso privado, y los comportamientos o métodos que presentan un acceso público.
+              </p>
+              <br /><br />
+              <img width="100%" src="./img/png/state.png" />
+            </div>
+            <div id="abstraccion" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es abstracción?</h3>
+              <p style="text-align: justify">
+                Al traer datos y componentes de un objeto que me permita crear un
+                <strong>molde o especie de clase para generar más objetos</strong>, a eso se le llama abstracción y con el
+                análisis de la abstracción creamos las clases. <br /><br />
+                También podemos decir que es un principio por el cual se descarta toda aquella información que no resulta
+                relevante en un contexto en particular enfatizando algunos de los detalles o propiedades de los objetos, depende
+                principalmente del interés del observador.
+                <br /><br />
+                La abstracción consiste en
+                <strong>captar las características y funciones que un objeto(Aun sin crear en proceso de análisis)</strong>
+                desempeña y estos son representados en clases por medio de atributos y métodos de dicha clase para posteriormente
+                ya proceder crear objetos a partir de dicha clase.
+              </p>
+              <br /><br />
+              <h3 id="herencia" class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es herencia?</h3>
+              <p style="text-align: justify">
+                La herencia es un proceso mediante el cual se puede crear una
+                <strong>clase hija que hereda de una clase padre, compartiendo sus métodos y atributos</strong>. Además de ello,
+                una clase hija puede <strong>sobrescribir los métodos o atributos, o incluso definir unos nuevos</strong>. Se
+                puede crear una clase hija con tan solo pasar como parámetro la clase de la que queremos heredar. <br /><br />
+                En el siguiente ejemplo vemos cómo se puede usar la herencia, con la clase Perro que hereda las propiedades de la
+                clase Animal.
+              </p>
+            </div>
+            <div id="polimorfismo" class="col-sm-12 col-xl-6 p-5">
+              <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es polimorfismo?</h3>
+              <p style="text-align: justify">
+                El término polimorfismo tiene origen en las palabras <strong>poly (muchos) y morfo (formas)</strong>, y aplicado a
+                la programación hace referencia a que los objetos pueden tomar diferentes formas. ¿Pero qué significa esto?
+                <br /><br />
+                Pues bien, significa que objetos de diferentes clases pueden ser accedidos utilizando el mismo interfaz, mostrando
+                un comportamiento distinto (tomando diferentes formas) según cómo sean accedidos.
+                <br /><br />
+                <strong>Ejemplo:</strong> tenemos la clase animal de la cual podemos crear dos objetos perro y gato, ambos objetos
+                <strong>heredan las propiedades de la clase animal, pero se comportan diferente</strong>, eso se denomina
+                polimorfismo.
+              </p>
+            </div>
+          </div>
+          <!-- Getters y Setters -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/menu.js"></script>
+</html>
