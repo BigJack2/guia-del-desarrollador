@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+
+  <title>Guia Jhon Vanegas</title>
+  <link rel="shortcut icon" href="img/icons/laravel.ico" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!--Fuentes ubuntu de google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/sidebars.css" rel="stylesheet" />
+
+  <!-- Custom styles for this icons -->
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/estilos.css" rel="stylesheet" />
+
+  <style></style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Este menu esta en JavaScript -->
+      <div class="col-sm-12 col-lg-3 col-xl-3 col-xxl-2 overflow-auto">
+        <div id="menu-content" class="flex-shrink-3 sticky-top overflow-auto">
+          <div id="jsMenu"></div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-lg-9 col-xl-9 col-xxl-10 pt-2 text-center">
+        <div class="row justify-content-center py-3">
+          <h3 class="text-center fw-bold fuente1 text-color2 pt-5 pb-2">SQL Server</h3>
+
+          <div id="instancia" class="col-sm-12 p-5">
+            <h3 id="asp" class="text-color2 fw-bold fuente1 pt-5 pb-5">
+              Consultas
+            </h3>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=monokai&wt=none&l=sql&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=5px&ph=4px&ln=false&fl=1&fm=MonoLisa&fs=18px&lh=148%25&si=false&es=4x&wm=false&code=USE%2520BiblioDB%250A%250AGO%250A%250AUPDATE%2520Users%2520SET%2520Name_user%2520%253D%2520%27Update%2520Name%27%2520WHERE%2520Id_user%253D454522%250ADELETE%2520FROM%2520Users%2520WHERE%2520Id_user%253D454544%250A%250A%250ASELECT%2520*%2520FROM%2520Users%2520WHERE%2520Name_user%2520LIKE%2520%27Luis%27%250A%250A%250ASELECT%2520*%2520FROM%2520Users%2520WHERE%2520Id_user%2520%253D%2520454500%250A%250A%250ASELECT%2520*%2520FROM%2520Users%2520ORDER%2520BY%2520Name_user%2520ASC%250A%250A%250ASELECT%2520*%2520FROM%2520Users%2520ORDER%2520BY%2520Name_user%2520DESC%250A%250A%250ASELECT%2520*%2520FROM%2520Users%2520ORDER%2520BY%2520Name_user%250A%250A%250ASELECT%2520*%2520FROM%2520Users%2520WHERE%2520Id_user%2520BETWEEN%2520454555%2520AND%2520454599%250A%250A%250ASELECT%2520*%2520FROM%2520Users%2520WHERE%2520Id_user%2520%253D%2520454555%2520OR%2520Name_user%253D%27Pepito%27%250A%250A%250ASELECT%2520*%2520FROM%2520Users%250A%250A%250ASELECT%2520Name_user%250AFROM%2520Users%250AWHERE%2520EXISTS%250A%28SELECT%2520*%250AFROM%2520Books%250AWHERE%2520NameBook%253D%27Libro3%27%29%253B%250A%250A%250ASELECT%2520*%2520FROM%2520Users%2520WHERE%2520Id_user%2520NOT%2520BETWEEN%2520454555%2520AND%2520454588%250A%250A%250ASELECT%2520Name_user%2520FROM%2520Users%2520WHERE%2520Id_user%253D%2520ALL%2520%28SELECT%2520Id_user%2520FROM%2520Books%2520WHERE%2520NameBook%2520%253D%2520%27Libro3%27%29%253B%250A%250A%250ASELECT%2520*%2520FROM%2520Users%2520WHERE%2520Id_user%2520%253E%2520454555%28SELECT%2520Id_user%2520FROM%2520Books%29%250A%250A--CONSULTAS%2520OUTER%2520JOIN%250ASELECT%2520%250AU.Name_user%2520AS%2520%27Nombre%27%252C%250AB.Id_book%2520AS%2520%27Id_Libro%27%250AFROM%2520Users%2520U%250AFULL%2520OUTER%2520JOIN%2520Books%2520B%250AON%2520U.Id_book%253DB.Id_book%250AORDER%2520BY%2520U.Name_user%250A%250ASELECT%2520%250AB.Id_book%2520AS%2520%27Id_Libro%27%252C%250AE.Name_editorial%2520AS%2520%27Nombre%2520Editorial%27%250AFROM%2520Books%2520B%250AFULL%2520OUTER%2520JOIN%2520Editorials%2520E%250AON%2520B.Editorial%253DE.Id_editorial%250AORDER%2520BY%2520E.Name_editorial%250A%250ASELECT%2520%250AB.Id_book%2520AS%2520%27Id%2520Libro%27%252C%250AA.Id_author%2520AS%2520%27Id%2520Autor%27%250AFROM%2520Books%2520B%250AFULL%2520OUTER%2520JOIN%2520Authors%2520A%250AON%2520B.Author%253DA.Id_author%250AORDER%2520BY%2520A.Id_author%250A%250A%250A%250A%250A--CONSULTAS%2520OUTER%2520JOIN%2520mientras%2520la%2520tabla%2520a%2520o%2520b%2520sea%2520null%250ASELECT%2520b.Name_book%252C%2520a.Name_author%250AFROM%2520Books%2520AS%2520b%250AFULL%2520OUTER%2520JOIN%2520Authors%2520AS%2520a%250AON%2520b.Author%2520%253D%2520a.Id_author%250AWHERE%2520a.Name_author%2520LIKE%2520%27%2525Lu%2525%27%253B%250A%250ASELECT%2520b.Name_book%252C%2520e.Name_editorial%250AFROM%2520Books%2520AS%2520b%250AFULL%2520OUTER%2520JOIN%2520Editorials%2520AS%2520e%250AON%2520b.Editorial%2520%253D%2520e.Id_editorial%250A%250ASELECT%2520b.Name_book%252C%2520g.Name_gender%250AFROM%2520Books%2520AS%2520b%250AFULL%2520OUTER%2520JOIN%2520Genders%2520AS%2520g%250AON%2520b.Gender%2520%253D%2520g.Id_gender%250A%250A%250A%250A--LEFT%2520JOIN%2520mientras%2520la%2520tabla%2520b%2520sea%2520nulll%250ASELECT%2520b.Id_book%2520AS%2520Libro%252C%2520u.Id_user%2520AS%2520Usuario%250AFROM%2520Books%2520AS%2520b%250ALEFT%2520JOIN%2520Users%2520AS%2520u%250AON%2520b.Id_book%2520%253D%2520u.Id_user%250A%250ASELECT%2520*%2520FROM%2520Users%2520AS%2520u%250ALEFT%2520JOIN%2520Books%2520AS%2520b%250AON%2520u.Id_user%2520%253D%2520b.id_book%250A%250ASELECT%2520*%2520FROM%2520Books%2520AS%2520b%250ALEFT%2520JOIN%2520Users%2520A"
+              style="width: 100%; height: 3200px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/menu.js"></script>
+
+</html>

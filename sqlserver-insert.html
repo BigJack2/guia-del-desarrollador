@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+
+  <title>Guia Jhon Vanegas</title>
+  <link rel="shortcut icon" href="img/icons/laravel.ico" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!--Fuentes ubuntu de google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/sidebars.css" rel="stylesheet" />
+
+  <!-- Custom styles for this icons -->
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/estilos.css" rel="stylesheet" />
+
+  <style></style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Este menu esta en JavaScript -->
+      <div class="col-sm-12 col-lg-3 col-xl-3 col-xxl-2 overflow-auto">
+        <div id="menu-content" class="flex-shrink-3 sticky-top overflow-auto">
+          <div id="jsMenu"></div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-lg-9 col-xl-9 col-xxl-10 pt-2 text-center">
+        <div class="row justify-content-center py-3">
+          <h3 class="text-center fw-bold fuente1 text-color2 pt-5 pb-2">SQL Server</h3>
+
+          <div id="instancia" class="col-sm-12 p-5">
+            <h3 id="asp" class="text-color2 fw-bold fuente1 pt-5 pb-5">
+              Inserción de datos
+            </h3>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=monokai&wt=none&l=sql&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=5px&ph=4px&ln=false&fl=1&fm=MonoLisa&fs=18px&lh=148%25&si=false&es=4x&wm=false&code=USE%2520BiblioDB%250A%250AGO%250A%250AINSERT%2520INTO%2520Genders%28Name_gender%29VALUES%28%27epic%27%29%252C%2520%250A%28%27comedy%27%29%252C%2520%250A%28%27sing%2520of%2520deed%27%29%252C%2520%250A%28%27Tale%27%29%252C%2520%250A%28%27Novel%27%29%252C%2520%250A%28%27Fable%27%29%252C%2520%250A%28%27Ode%27%29%252C%2520%250A%28%27Elegy%27%29%252C%2520%250A%28%27Romance%27%29%252C%250A%2520%28%27Tragedy%27%29%253B%250A%250A%2520GO%250A%250A%2520INSERT%2520INTO%2520Editorials%28Name_editorial%29VALUES%28%27Norma%27%29%252C%2520%250A%28%27Planeta%27%29%252C%2520%250A%28%27Carvajal%27%29%252C%2520%250A%28%27Gato%2520Malo%27%29%252C%2520%250A%28%27Ediciones%2520SM%27%29%252C%2520%250A%28%27Educar%2520Editores%27%29%252C%2520%250A%28%27Grupo%2520Penta%27%29%252C%250A%2520%28%27Laguna%2520Libros%27%29%252C%2520%250A%28%27LuaBooks%27%29%252C%2520%250A%28%27Vicens%2520Vives%2520%27%2520%29%2520%253B%2520%250A%250AGO%250A%250AINSERT%2520INTO%2520Authors%28Name_author%252CLastname_author%252CPhone_author%252CEmail_author%29VALUES%250A%28%27Pepito%27%252C%27Perez%27%252C25545%252C%27Pepito%2540gmail.com%27%29%252C%250A%28%27Pepita%27%252C%27Perez%27%252C24255%252C%27Pepito2%2540gmail.com%27%29%252C%250A%28%27Juanio%27%252C%27Sanchez%27%252C775545%252C%27Pepito3%2540gmail.com%27%29%252C%250A%28%27Juanita%27%252C%27Saenz%27%252C895445%252C%27Pepito4%2540gmail.com%27%29%252C%250A%28%27Luis%27%252C%27Castro%27%252C50045%252C%27Pepito5%2540gmail.com%27%29%252C%250A%28%27Luisa%27%252C%27Arboleda%27%252C10045%252C%27Pepito6%2540gmail.com%27%29%252C%250A%28%27Valentina%27%252C%27Qui%25C3%25B1ones%27%252C224545%252C%27Pepito7%2540gmail.com%27%29%252C%250A%28%27Ivan%27%252C%27Grisales%27%252C447625%252C%27Pepito8%2540gmail.com%27%29%252C%250A%28%27Rodrigo%27%252C%27Rodriguez%27%252C532455%252C%27Pepito9%2540gmail.com%27%29%252C%250A%28%27Sebastian%27%252C%27Vanegas%27%252C22245%252C%27Pepito10%2540gmail.com%27%29%253B%250A%250AGO%2520%250A%250AINSERT%2520INTO%2520Books%28Name_book%252CCant%252CPrice%252CAuthor%252CGender%252CEditorial%29VALUES%250A%28%27Librol%27%252C12%252C1500%252C1%252C1%252C2%29%252C%2520%250A%28%27Libro2%27%252C7%252C2500%252C2%252C2%252C2%29%252C%2520%250A%28%27Libro3%27%252C19%252C3500%252C3%252C3%252C3%29%252C%2520%250A%28%27Libro4%27%252C22%252C4500%252C4%252C4%252C4%29%252C%2520%250A%28%27Libro5%27%252C13%252C5500%252C4%252C5%252C5%29%252C%2520%250A%28%27Libro6%27%252C5%252C6500%252C6%252C6%252C7%29%252C%2520%250A%28%27Libro7%27%252C10%252C7500%252C7%252C7%252C7%29%252C%2520%250A%28%27Libro8%27%252C16%252C8500%252C8%252C8%252C7%29%252C%2520%250A%28%27Libro9%27%252C14%252C9500%252C9%252C9%252C9%29%252C%250A%28%27Libro10%27%252C19%252C10500%252C8%252C10%252C10%29%253B%250A%250AGO%250A%250AINSERT%2520INTO%2520Users%28Id_user%252CName_user%252CLastname_user%252CPhone_user%252CEmail_user%252CId_book%29VALUES%250A%28444511%252C%27Pepito%27%252C%27Perez%27%252C25545%252C%27Pepito1%2540gmail.com%27%252C1%29%252C%2520%250A%28454522%252C%27Pepita%27%252C%27Perez%27%252C24255%252C%27Pepito2%2540gmail.coml%27%252C2%29%252C%2520%250A%28454533%252C%27Juanito1%27%252C%27Sanchez%27%252C775545%252C%27Pepito3%2540gmail.coml%27%252C2%29%252C%2520%250A%28454544%252C%27Juanita%27%252C%27Saenz%27%252C895445%252C%27Pepito4%2540gmail.coml%27%252C5%29%252C%2520%250A%28454555%252C%27Luis%27%252C%27Castro%27%252C50045%252C%27Pepito5%2540gmail.coml%27%252C6%29%252C%2520%250A%28454566%252C%27Luisa%27%252C%27Arboleda%27%252C10045%252C%27Pepito6%2540gmail.com%27%252C5%29%252C%2520%250A%28454577%252C%27Valentina%27%252C%27Qui%25C3%25B1ones%27%252C224545%252C%27Pepito7%2540gmail.coml%27%252C9%29%252C%2520%250A%28454588%252C%27Ivan%27%252C%27Grisales%27%252C447625%252C%27Pepito8%2540gmail.com%27%252C5%29%252C%2520%250A%28454599%252C%27Rodrigo%27%252C%27Rodriguez%27%252C532455%252C%27Pepito9%2540gmail.com%27%252C7%29%252C%2520%250A%28454500%252C%27Sebastian%27%252C%27Vanegas%27%252C22245%252C%27Pepito10%2540gmail.coml%27%252C8%29%253B%2520%250A%250A"
+              style="width: 100%; height: 2200px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/menu.js"></script>
+
+</html>

@@ -113,6 +113,59 @@ myMenu += '</ul>';
 myMenu += '</div>';
 myMenu += '</li>';
 
+myMenu += '<li class="mb-1">';
+myMenu += '<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#diccionario-collapse" aria-expanded="false">Diccionario</button>';
+myMenu += '<div class="collapse" id="diccionario-collapse">';
+myMenu += '<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">';
+myMenu += '<li><a href="diccionario.html#camel" class="link-dark rounded">CamelCase</a></li>';
+myMenu += '<li><a href="diccionario.html#pascal" class="link-dark rounded">PascalCase</a></li>';
+myMenu += '<li><a href="diccionario.html#snake" class="link-dark rounded">SnakeCase</a></li>';
+myMenu += '<li><a href="diccionario.html#castear" class="link-dark rounded">¿Qué es castear una variable?</a></li>';
+myMenu += '<li><a href="diccionario.html#instancia" class="link-dark rounded">¿Qué es una instancia?</a></li>';
+myMenu += '<li><a href="diccionario.html#asincronismo" class="link-dark rounded">Qué es asincronismo?</a></li>';
+myMenu += '<li><a href="diccionario.html#paralelismo" class="link-dark rounded">¿Qué es una paralelismo?</a></li>';
+myMenu += '<li><a href="diccionario.html#sincronismo" class="link-dark rounded">¿Qué es sincronismo?</a></li>';
+myMenu += '<li><a href="diccionario.html#iterar" class="link-dark rounded">¿Qué es iteración ó iterar?</a></li>';
+myMenu += '<li><a href="diccionario.html#setear" class="link-dark rounded">¿Qué significa setear?</a></li>';
+myMenu += '<li><a href="diccionario.html#constante" class="link-dark rounded">¿Qué es una variable constante?</a></li>';
+myMenu += '<li><a href="diccionario.html#MVC" class="link-dark rounded">¿Qué es MVC?</a></li>';
+myMenu += '<li><a href="diccionario.html#Modelos" class="link-dark rounded">Modelos</a></li>';
+myMenu += '<li><a href="diccionario.html#Vistas" class="link-dark rounded">Vistas</a></li>';
+myMenu += '<li><a href="diccionario.html#Controladores" class="link-dark rounded">Controladores</a></li>';
+myMenu += '<li><a href="diccionario.html#parametro" class="link-dark rounded">¿Qué es un parametro?</a></li>';
+myMenu += '<li><a href="diccionario.html#argumento" class="link-dark rounded">¿Qué es un argumento?</a></li>';
+myMenu += '</ul>';
+myMenu += '</div>';
+myMenu += '</li>';
+
+myMenu += '<li class="border-top my-3"></li>';
+
+myMenu += '<li class="mb-1">';
+myMenu += '<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#csharp-collapse" aria-expanded="false">C# y Entity Framework</button>';
+myMenu += '<div class="collapse" id="csharp-collapse">';
+myMenu += '<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">';
+myMenu += '<li><a href="csharp.html#csharp" class="link-dark rounded">¿Qué es C#?</a></li>';
+myMenu += '<li><a href="csharp.html#asp" class="link-dark rounded">¿Qué es ASP.Net?</a></li>';
+myMenu += '<li><a href="csharp.html#variables" class="link-dark rounded">Tipos de variables</a></li>';
+myMenu += '<li><a href="csharp.html#strings" class="link-dark rounded">Manejo de strings</a></li>';
+myMenu += '<li><a href="csharp.html#metodos" class="link-dark rounded">Métodos en C #</a></li>';
+myMenu += '<li><a href="csharp.html#parametros" class="link-dark rounded">Métodos con parametros</a></li>';
+myMenu += '<li><a href="csharp.html#Arreglos" class="link-dark rounded">Arreglos</a></li>';
+myMenu += '</ul>';
+myMenu += '</div>';
+myMenu += '</li>';
+
+myMenu += '<li class="mb-1">';
+myMenu += '<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#entity-collapse" aria-expanded="false">SQL Server (Ejercicio)</button>';
+myMenu += '<div class="collapse" id="entity-collapse">';
+myMenu += '<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">';
+myMenu += '<li><a href="sqlserver-create.html" class="link-dark rounded">Creación de BD y tablas</a></li>';
+myMenu += '<li><a href="sqlserver-insert.html" class="link-dark rounded">Inserción de datos</a></li>';
+myMenu += '<li><a href="sqlserver-query.html" class="link-dark rounded">Consultas</a></li>';
+myMenu += '</ul>';
+myMenu += '</div>';
+myMenu += '</li>';
+
 myMenu += '<li class="border-top my-3"></li>';
 
 myMenu += '<li class="mb-1">';

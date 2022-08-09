@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+
+  <title>Guia Jhon Vanegas</title>
+  <link rel="shortcut icon" href="img/icons/laravel.ico" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!--Fuentes ubuntu de google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/sidebars.css" rel="stylesheet" />
+
+  <!-- Custom styles for this icons -->
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/estilos.css" rel="stylesheet" />
+
+  <style></style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Este menu esta en JavaScript -->
+      <div class="col-sm-12 col-lg-3 col-xl-3 col-xxl-2 overflow-auto">
+        <div id="menu-content" class="flex-shrink-3 sticky-top overflow-auto">
+          <div id="jsMenu"></div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-lg-9 col-xl-9 col-xxl-10 pt-2 text-center">
+        <div class="row justify-content-center py-3">
+          <h3 class="text-center fw-bold fuente1 text-color2 pt-5 pb-2">Diccionario del
+            desarrollador</h3>
+
+          <div id="camel" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">CamelCase</h3>
+            <p style="text-align: justify">
+              CamelCase es un estilo de escritura que <strong>se aplica a frases o palabras
+                compuestas</strong>. El
+              nombre se debe a que las mayúsculas a lo largo de una palabra en CamelCase se asemejan
+              a las jorobas de un camello.
+              <br />
+              El nombre CamelCase se podría traducir como Mayúsculas/Minúsculas Camello.
+            </p>
+
+            <br /><br />
+
+            <h3 id="pascal" class="text-color2 fw-bold fuente1 pt-5 pb-5">PascalCase</h3>
+            <p style="text-align: justify">
+              PascalCase es una convención de nomenclatura en la que <strong>la primera letra de
+                cada
+                palabra en una
+                palabra compuesta se escribe con mayúscula</strong>.
+            </p>
+
+            <br /><br />
+
+            <h3 id="snake" class="text-color2 fw-bold fuente1 pt-5 pb-5">SnakeCase</h3>
+            <p style="text-align: justify">
+              Snake case (estilizado como snake_case ) se refiere al estilo de escritura en el que
+              <strong>cada espacio se reemplaza por un carácter de subrayado (_)</strong>, y la
+              primera letra de cada
+              palabra se escribe en minúsculas.
+              <br /><br /><br />
+              <strong>Ejemplos</strong>
+              <br /><br />
+              <strong><i class="bx bx-chevron-right"></i> el caso de PascalCase:</strong> NewObject;
+              <br /><br />
+              <strong><i class="bx bx-chevron-right"></i> el caso de Camel:</strong> newObject;
+              <br /><br />
+              <strong><i class="bx bx-chevron-right"></i> el caso de Snake:</strong> new_object;
+
+            </p>
+          </div>
+
+          <div id="castear" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es castear una variable?</h3>
+            <p style="text-align: justify">
+              En la programación hay situaciones en las que se necesita <strong>cambiar el tipo de
+                dato en
+                otro</strong>. Para
+              hacerlo podemos usar cast es decir que tomamos un dato y lo transformamos en otro tipo
+              de datos.
+              <br /><br />
+              <strong>Ejemplo de castero en C#</strong>
+            </p>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=monokai&wt=none&l=text%2Fx-csharp&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=5px&ph=4px&ln=false&fl=1&fm=MonoLisa&fs=18px&lh=148%25&si=false&es=4x&wm=false&code=double%2520myDouble%2520%253D%25209.78%253B%250A%250A%252F%252F%2520Manual%2520casting%253A%2520double%2520to%2520int%250Aint%2520myInt%2520%253D%2520%28int%29%2520myDouble%253B%2520%2520%2520%2520%250A%250A%250A%252F%252F%2520Outputs%25209.78%250AConsole.WriteLine%28myDouble%29%253B%2520%2520%2520%250A%250A%252F%252F%2520Outputs%25209int%2520myInt%2520%253D%252010%253B%250AConsole.WriteLine%28myInt%29%253B%2520%2520%2520%2520%2520%2520%250Adouble%2520myDouble%2520%253D%25205.25%253B%250Abool%2520myBool%2520%253D%2520true%253B%250A%250A%250A%252F%252F%2520convert%2520int%2520to%2520string%250AConsole.WriteLine%28Convert.ToString%28myInt%29%29%253B%2520%2520%250A%250A%252F%252F%2520convert%2520int%2520to%2520double%250AConsole.WriteLine%28Convert.ToDouble%28myInt%29%29%253B%2520%2520%250A%250A%252F%252F%2520convert%2520double%2520to%2520int%250AConsole.WriteLine%28Convert.ToInt32%28myDouble%29%29%253B%250A%250A%252F%252F%2520convert%2520bool%2520to%2520string%250AConsole.WriteLine%28Convert.ToString%28myBool%29%29%253B%2520%2520%2520"
+              style="width: 100%; height: 800px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+
+          <div id="instancia" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es una instancia?</h3>
+            <p style="text-align: justify">
+              Se llama instancia a todo objeto que <strong>derive de algún otro</strong>. De esta
+              forma, todos los
+              objetos son instancias de
+              algún otro, menos la clase Object que es la madre de todas.
+            </p>
+          </div>
+
+          <div id="asincronismo" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es asincronismo?</h3>
+            <p style="text-align: justify">
+              Asíncrono permite pasar la ejecución de una función a otro hilo o thread.
+              <br />
+              Cuando usas una función asíncrona en algún punto esperas <strong>respuesta de esa
+                función para
+                hacer algo,solo que no te quedas esperando puedes ir ejecutando otras
+                cosas</strong>.
+            </p>
+          </div>
+
+          <div id="paralelismo" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es paralelismo?</h3>
+            <p style="text-align: justify">
+              El paralelismo es una forma de computación en la cual <strong>varios cálculos pueden
+                realizarse
+                simultáneamente</strong>, Basado en el principio de dividir los problemas grandes
+              para
+              obtener varios
+              problemas pequeños, que son posteriormente <strong>solucionados en paralelo</strong>.
+              <br />
+              Se tienen funciones que trabajan independientes y una no necesita de otra
+              para funcionar.
+            </p>
+          </div>
+
+          <div id="sincronismo" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es sincronismo?</h3>
+            <p style="text-align: justify">
+              Un código síncrono es aquel código donde <strong>cada instrucción espera a la anterior
+                para
+                ejecutarse</strong>
+              mientras que un código asíncrono no espera a las instrucciones diferidas y continúa
+              con su
+              ejecución.
+            </p>
+          </div>
+
+          <div id="iterar" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es iteración ó iterar?</h3>
+            <p style="text-align: justify">
+              En programación, Iteración es la <strong>repetición de un segmento de código dentro de
+                un
+                programa de
+                computadora</strong>. Puede usarse tanto como un término genérico (como sinónimo de
+              repetición)
+              como para describir una forma específica de repetición con un estado mutable.
+            </p>
+            <br /><br />
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=monokai&wt=none&l=text%2Fx-csharp&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=5px&ph=4px&ln=false&fl=1&fm=MonoLisa&fs=18px&lh=148%25&si=false&es=4x&wm=false&code=%2520var%2520a%2520%253A%253D%25200%250A%2520for%2520i%2520from%25201%2520to%25203%2520%257B%250A%2520%2520%2520%2520%2520a%2520%253D%2520a%2520%252B%2520i%250A%2520%257D%250A%2520%252F%252F%2520se%2520imprime%2520el%2520n%25C3%25BAmero%25206%2520%250A%2520print%2520a%2520%2520"
+              style="width: 342px; height: 229px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
+
+          <div id="setear" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué significa setear?</h3>
+            <p style="text-align: justify">
+              En informática, set ("asigna", en inglés), un comando para <strong>mostrar y asignar
+                valor a
+                las variables de entorno</strong>.
+            </p>
+            <br /><br />
+            <h3 id="constante" class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es una variable
+              constante?</h3>
+            <p style="text-align: justify">
+              Una constante es un elemento de datos con nombre con un <strong>valor
+                predefinido</strong>. No se puede
+              cambiar el valor asignado a una constante predefinida.
+            </p>
+          </div>
+
+          <div id="MVC" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es MVC?</h3>
+            <p style="text-align: justify">
+              MVC <strong>(Modelo-Vista-Controlador)</strong> es un patrón en el diseño de software
+              comúnmente
+              utilizado para
+              implementar interfaces de usuario, datos y lógica de control. <strong>Enfatiza una
+                separación
+                entre la
+                lógica de negocios y su visualización</strong>.
+            </p>
+          </div>
+
+          <div id="Modelos" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">Modelos</h3>
+            <p style="text-align: justify">
+              Es la capa donde se <strong>trabaja con los datos</strong>, por tanto contendrá
+              mecanismos para acceder
+              a la
+              información y también para actualizar su estado. Los datos los tendremos habitualmente
+              en una base
+              de datos, por lo que en los modelos tendremos todas las funciones que accederán a las
+              tablas y harán
+              los correspondientes selects, updates, inserts, etc.
+            </p>
+          </div>
+
+          <div id="Vistas" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">Vistas</h3>
+            <p style="text-align: justify">
+              Las vistas, como su nombre nos hace entender, contienen el código de nuestra
+              aplicación que va a
+              <strong>producir la visualización de las interfaces de usuario</strong>, o sea, el
+              código que nos
+              permitirá
+              renderizar los estados de nuestra aplicación en HTML. En las vistas nada más tenemos
+              los códigos
+              HTML que nos permite mostrar la salida.
+            </p>
+          </div>
+
+          <div id="Controladores" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">Controladores</h3>
+            <p style="text-align: justify">
+              Contiene el código necesario para responder a las <strong>acciones que se solicitan en
+                la
+                aplicación</strong>, como
+              visualizar un elemento, realizar una compra, una búsqueda de información, etc.
+              <br />
+              En realidad es una capa que sirve de enlace entre las vistas y los modelos,
+              respondiendo a los
+              mecanismos que puedan requerirse para implementar las necesidades de nuestra
+              aplicación. Sin
+              embargo, su responsabilidad no es manipular directamente datos, ni mostrar ningún tipo
+              de salida,
+              sino servir de enlace entre los modelos y las vistas para implementar las diversas
+              necesidades del
+              desarrollo.
+            </p>
+          </div>
+
+          <div id="parametro" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es un parametro?</h3>
+            <p style="text-align: justify">
+              Un parámetro representa un valor que el procedimiento espera que pase al llamarlo. La
+              declaración
+              del procedimiento define sus parámetros.
+              <br />
+              Al definir un Function procedimiento o Sub , se especifica una lista de parámetros
+              entre paréntesis
+              inmediatamente después del nombre del procedimiento. Para cada parámetro, especifique
+              un nombre, un
+              tipo de datos y un mecanismo de paso (ByVal o ByRef). También puede indicar que un
+              parámetro es
+              opcional. Esto significa que el código de llamada no tiene que pasar un valor para él.
+              <br />
+              El nombre de cada parámetro actúa como una variable local en el procedimiento. Use el
+              nombre del
+              parámetro de la misma manera que cualquier otra variable.
+            </p>
+          </div>
+
+          <div id="argumento" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">¿Qué es un argumento?</h3>
+            <p style="text-align: justify">
+              Un argumento representa el valor que se pasa a un parámetro de procedimiento al llamar
+              al
+              procedimiento. El código de llamada proporciona los argumentos cuando llama al
+              procedimiento .
+              <br />
+              Cuando se llama a un Function procedimiento o Sub , se incluye una lista de argumentos
+              entre
+              paréntesis inmediatamente después del nombre del procedimiento. Cada argumento
+              corresponde al
+              parámetro en la misma posición de la lista.
+              <br />
+              A diferencia de la definición de parámetros, los argumentos no tienen nombres. Cada
+              argumento es una
+              expresión, que puede contener cero o más variables, constantes y literales. El tipo de
+              datos de la
+              expresión evaluada normalmente debe coincidir con el tipo de datos definido para el
+              parámetro
+              correspondiente y, en cualquier caso, debe poder convertirse en el tipo de parámetro.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/menu.js"></script>
+
+</html>
