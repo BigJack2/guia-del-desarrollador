@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+
+  <title>Guia Jhon Vanegas</title>
+  <link rel="shortcut icon" href="img/icons/laravel.ico" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!--Fuentes ubuntu de google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/sidebars.css" rel="stylesheet" />
+
+  <!-- Custom styles for this icons -->
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/estilos.css" rel="stylesheet" />
+
+  <style></style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Este menu esta en JavaScript -->
+      <div class="col-sm-12 col-lg-3 col-xl-3 col-xxl-2 overflow-auto">
+        <div id="menu-content" class="flex-shrink-3 sticky-top overflow-auto">
+          <div id="jsMenu"></div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-lg-9 col-xl-9 col-xxl-10 pt-2 text-center">
+        <div class="row justify-content-center py-3">
+          <h3 class="text-center fw-bold fuente1 text-color2 pt-5 pb-2">LinQ</h3>
+
+          <div id="linq" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">
+              ¿Qué es LinQ?
+            </h3>
+            <p style="text-align: justify">
+
+              <strong>Language Integrated Query</strong> o Consulta Integrada en el Lenguaje es un
+              componente de la plataforma
+              Microsoft .NET que agrega capacidades de consulta a datos de manera nativa a los
+              lenguajes .NET
+              <br /><br />
+
+              Dicho de manera sencilla, Es un conjunto de extensiones integradas en el lenguaje C#,
+              que nos permite trabajar de manera cómoda y rápida con colecciones de datos, como si
+              de una base de datos se tratase. Es decir, podemos llevar a cabo inserciones,
+              selecciones y borrados, así como operaciones sobre sus elementos.
+            </p>
+            <br />
+            <a class="btn btn-warning btn-lg" target="_blank"
+              href="https://www.campusmvp.es/recursos/post/introduccion-rapida-a-linq-con-c-sharp.aspx"
+              download="Booksmarks">Introduccion a LinQ <i class="bx bx-exit"></i></a>
+          </div>
+
+          <div id="ejemplo" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">
+              Ejemplo basico de LinQ
+            </h3>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=monokai&wt=none&l=text%2Fx-csharp&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=5px&ph=4px&ln=false&fl=1&fm=MonoLisa&fs=18px&lh=148%25&si=false&es=4x&wm=false&code=var%2520valores%2520%253D%2520new%2520List%253Cint%253E%2520%257B1%252C2%252C3%252C4%252C5%252C6%252C7%252C8%252C9%257D%253B%250Avar%2520suma%2520%253D%2520valores.Sum%28%29%253B%250Avar%2520pares%2520%253D%2520valores.Where%28x%2520%253D%253E%2520x%2520%2525%25202%2520%253D%253D%25200%29.ToList%28%29%253B"
+              style="width: 100%; height: 230px; border:0; transform: scale(1); overflow:hidden;"
+              sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            <br />
+            <p style="text-align: justify">
+
+              Seguramente te hayas fijado en el ToList() del segundo caso. Esto es porque LINQ
+              siempre nos va a
+              devolver un objeto de tipo IEnumerable<T>, el cual debemos iterar. <strong>Hasta que
+                  no lo iteremos, la
+                  consulta no se ha ejecutado todavía, y solo tenemos una expresión sobre una
+                  colección</strong>, por eso
+                invocamos ToList() para forzar la ejecución de la consulta.
+            </p>
+          </div>
+
+          <div id="bocetos" class="col-sm-12 col-xl-8">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">
+              LinQ explicado con bocetos
+            </h3>
+
+            <a class="btn btn-warning btn-lg" target="_blank"
+              href="https://steven-giesel.com/blogPost/d65c5411-a69b-489f-b73f-18ce0ed8678d"
+              download="Booksmarks">Ir al blog Oficial <i class="bx bx-exit"></i></a>
+            <br /><br /><br /><br />
+
+            <img src="./img/linq/LinqPart1.webp" width="100%">
+            <br /><br />
+
+          </div>
+
+          <div id="select" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              Select
+            </h3>
+            <p style="text-align: justify">
+              Con seleccionar creamos una proyección de un elemento a otro. Simplemente hablando,
+              mapeamos desde
+              nuestro tipo dado a un tipo deseado. El conjunto de resultados tiene la misma cantidad
+              de elementos
+              que el conjunto de origen.
+            </p>
+          </div>
+
+          <div id="where" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              Where
+            </h3>
+            <p style="text-align: justify">
+              Donde filtros basados ​​en condiciones verdadero/falso. En el ejemplo dado, solo
+              queremos tener
+              círculos verdes. El conjunto de resultados puede ser el mismo, menor o incluso vacío.
+            </p>
+          </div>
+
+          <div id="many" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              SelectMany
+            </h3>
+            <p style="text-align: justify">
+              SelectMany se utiliza para aplanar listas. Si tiene una lista dentro de una lista,
+              podemos usarla
+              para aplanarla en una representación unidimensional.
+            </p>
+          </div>
+
+          <div id="zip" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              Zip
+            </h3>
+            <p style="text-align: justify">
+              Con Zip, "fusionamos" dos listas mediante una función de fusión determinada.
+              Fusionamos objetos
+              hasta que nos quedamos sin objetos en cualquiera de los carriles. Como se ve en el
+              ejemplo: el
+              primer carril tiene 2 elementos, el segundo tiene 3. Por lo tanto, el conjunto de
+              resultados
+              contiene solo 2 elementos.
+            </p>
+          </div>
+
+          <div id="order" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              OrderBy
+            </h3>
+            <p style="text-align: justify">
+              OrderBy ordena la lista dada por su función de comparación o por una función
+              intrínseca (por
+              ejemplo, .NET sabe cómo ordenar números). OrderBy y OrderByDescending son estables. El
+              conjunto de
+              resultados tiene la misma cantidad de elementos que el conjunto de origen.
+            </p>
+          </div>
+
+          <div id="distinct" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              Distinct
+            </h3>
+            <p style="text-align: justify">
+              Distinct devuelve un nuevo enumerable donde se eliminan todos los duplicados, algo así
+              como un
+              Conjunto. Tenga cuidado de que, para el tipo de referencia, el valor predeterminado
+              sea comprobar la
+              igualdad de las referencias, lo que puede dar lugar a resultados falsos. El conjunto
+              de resultados
+              puede ser igual o menor.
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-xl-8 mt-5 pt-4">
+            <img src="./img/linq/LinqPart2.webp" width="100%">
+          </div>
+
+          <div id="aggregate" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              Aggregate
+            </h3>
+            <p style="text-align: justify">
+              También conocido como "reducir". La idea principal es agregar/reducir un conjunto de
+              entradas en un
+              solo valor. Una suma de lista sería un ejemplo de agregado. También definir el
+              promedio / máximo /
+              mínimo sería ejemplos destacados. Siempre comienza con el valor inicial y cada
+              elemento de la lista
+              se agrega mediante la función dada por el usuario en la parte superior.
+            </p>
+          </div>
+
+          <div id="chunk" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              Chunk
+            </h3>
+            <p style="text-align: justify">
+              Este agradable ayudante, introducido con .NET 6, crea sublistas más pequeñas a partir
+              de una lista
+              dada. Imagínense como crear lotes más pequeños a partir de una lista.
+            </p>
+          </div>
+
+          <div id="union" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              Union
+            </h3>
+            <p style="text-align: justify">
+              La unión de dos listas dará como resultado cada elemento distinto que se encuentra en
+              ambas listas.
+              Se comporta como un conjunto, por lo que se eliminan los elementos duplicados.
+              Imagínese que tiene
+              ambas listas juntas y llama a Distinct.
+            </p>
+          </div>
+
+          <div id="intrinsect" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              Intersect
+            </h3>
+            <p style="text-align: justify">
+              Funciona de manera similar a Union, pero ahora verificamos qué elementos están
+              presentes en la lista
+              A Y en la lista B. Solo los elementos presentes en ambos estarán en el conjunto de
+              resultados.
+              También aquí: Solo los artículos únicos están en la nueva lista. Los duplicados se
+              eliminan
+              automáticamente.
+            </p>
+          </div>
+
+          <div id="any" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              Any
+            </h3>
+            <p style="text-align: justify">
+              Cualquier verificación si al menos un elemento satisface su condición. Si es así,
+              devuelve
+              verdadero. Si no hay ningún elemento que cumpla la condición, devuelve falso. Any
+              también deja de
+              procesar inmediatamente una vez que encuentra un elemento.
+            </p>
+          </div>
+
+          <div id="all" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              All
+            </h3>
+            <p style="text-align: justify">
+              Como su nombre lo indica, comprueba si TODOS los elementos de la lista cumplen una
+              determinada
+              condición. Si es así devuelve verdadero, de lo contrario falso. Si ALL encuentra un
+              elemento que no
+              cumple la condición, detiene inmediatamente el procesamiento y devuelve falso.
+            </p>
+          </div>
+
+          <div id="append" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              Append
+            </h3>
+            <p style="text-align: justify">
+              Append pone el elemento dado al final de la lista.
+            </p>
+          </div>
+
+          <div id="prepend" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              Prepend
+            </h3>
+            <p style="text-align: justify">
+              Pone el elemento dado al principio de la lista.
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-xl-8 mt-5 pt-4">
+            <img src="./img/linq/LinqPart3.webp" width="100%">
+          </div>
+
+          <div id="max" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              MaxBy
+            </h3>
+            <p style="text-align: justify">
+              Con MaxBy y MinBy también podemos hacer una proyección a una propiedad de nuestra
+              clase y obtener el
+              objeto donde esta propiedad exacta es la "más grande".
+            </p>
+          </div>
+
+          <div id="distinctby" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              DistinctBy
+            </h3>
+            <p style="text-align: justify">
+              DistinctBy funciona de manera similar a Distinct, pero en lugar del nivel del objeto
+              en sí, podemos
+              definir una proyección a una propiedad en la que queremos tener un conjunto de
+              resultados distinto.
+            </p>
+          </div>
+
+          <div id="tolook" class=" col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              ToLookup
+            </h3>
+            <p style="text-align: justify">
+              Este método crea una búsqueda. Una búsqueda se define que tenemos una clave que puede
+              apuntar a la
+              lista de objetos (relación 1 a n). El primer argumento toma el selector de "clave". El
+              segundo
+              selector es el "valor". Puede ser el objeto mismo o una propiedad del objeto mismo. Al
+              final tenemos
+              una lista de claves distintas donde los valores comparten esa clave exacta. Un objeto
+              LookUp es
+              inmutable. No puede agregar elementos después.
+            </p>
+          </div>
+
+          <div id="dictionary" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              ToDictionary
+            </h3>
+            <p style="text-align: justify">
+              ToDictionary funciona de manera similar a ToLookup con una diferencia clave. El método
+              ToDictionary
+              solo permite relaciones 1 a 1. Si dos elementos comparten la misma clave, se producirá
+              una excepción
+              de que la clave ya está presente. Además, el diccionario se puede mutar después (por
+              ejemplo, con el
+              método Add).
+            </p>
+          </div>
+
+          <div id="join" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              Join
+            </h3>
+            <p style="text-align: justify">
+              Join funciona de manera similar a SQL Left-Join. Tenemos dos conjuntos que queremos
+              unir. Los
+              siguientes dos argumentos son los selectores de "clave" de cada lista. Lo que Join
+              básicamente hace
+              es que toma todos los elementos de la lista A y los compara con el "selector clave"
+              dado contra el
+              selector clave de la lista b. Si coincide, podemos crear un nuevo objeto C, que puede
+              consistir en
+              esos dos elementos.
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-xl-8 mt-5 pt-4">
+            <img src="./img/linq/LinqPart4.webp" width="100%">
+          </div>
+
+          <div id="take" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              Take
+            </h3>
+            <p style="text-align: justify">
+              Take nos permite "tomar" la cantidad dada de elementos. Si tenemos menos elementos en
+              la matriz de
+              los que queremos tomar, Take() solo devolverá los objetos restantes.
+            </p>
+          </div>
+
+          <div id="skip" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              Skip
+            </h3>
+            <p style="text-align: justify">
+              Con Skip "saltamos" la cantidad dada de elementos. Si omitimos más elementos de los
+              que contiene
+              nuestra lista, obtenemos una enumeración vacía. Take y Skip juntos pueden ser muy
+              poderosos para
+              cosas como la paginación.
+            </p>
+          </div>
+
+          <div id="oftype" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              OfType
+            </h3>
+            <p style="text-align: justify">
+              OfType comprueba cada elemento de la enumeración si es de un tipo dado (también los
+              tipos heredados
+              cuentan como ese tipo dado) y los devuelve en una nueva enumeración. Eso ayuda
+              especialmente si
+              tenemos matrices sin tipo (objeto) o queremos una subclase especial de la enumeración
+              dada.
+            </p>
+          </div>
+
+          <div id="group" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              GroupBy
+            </h3>
+            <p style="text-align: justify">
+              GroupBy agrupa la enumeración por una determinada proyección/clave. Todos los
+              elementos que
+              comparten esta clave exacta se agrupan. Es casi idéntico a "ToLookup" con una gran
+              diferencia.
+              GroupBy significa "Estoy creando un objeto para representar la pregunta '¿cómo se
+              verían estas cosas
+              si las organizara por grupo?'". Llamar a ToLookup significa "Quiero un caché de todo
+              ahora
+              organizado por grupo".
+            </p>
+          </div>
+
+          <div id="reverse" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              Reverse
+            </h3>
+            <p style="text-align: justify">
+              Devuelve una versión invertida de la enumeración dada.
+            </p>
+          </div>
+
+          <div id="first" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              First()
+            </h3>
+            <p style="text-align: justify">
+              First devuelve la primera aparición de una enumeración. Incluso si hay elementos más
+              adelante,
+              siempre regresa inmediatamente después del primer elemento encontrado. Si no se
+              encuentra ningún
+              elemento, lanza una excepción.
+            </p>
+          </div>
+
+          <div id="single" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              Single()
+            </h3>
+            <p style="text-align: justify">
+              Single no vuelve inmediatamente después de la primera aparición. La diferencia con el
+              primero es que
+              Single garantiza que no haya un segundo elemento del tipo/predicado dado. Por lo
+              tanto, Single tiene
+              que pasar por toda la enumeración (en el peor de los casos) si puede encontrar otro
+              elemento. Si es
+              así, lanza una excepción. Si no se encuentra ningún elemento, lanza una excepción.
+            </p>
+          </div>
+
+          <div id="firstsingle" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">
+              FirstOrDefault / SingleOrDefault
+            </h3>
+            <p style="text-align: justify">
+              Si no se encuentra ningún elemento en la enumeración dada, lo devuelve por defecto
+              (para tipos de
+              referencia nulo y para tipos de valor el valor predeterminado). Desde .NET6 podemos
+              pasar lo que
+              significa "predeterminado" para nosotros. Por lo tanto, podemos tener tipos de
+              referencia que no
+              aceptan valores NULL si lo deseamos.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/menu.js"></script>
+
+</html>
