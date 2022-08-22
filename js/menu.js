@@ -101,6 +101,26 @@ myMenu += '</div>';
 myMenu += '</ >';
 
 myMenu += '<li class="mb-1">';
+myMenu += '<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#git-collapse" aria-expanded="false">Desarrollo basado en Git</button>';
+myMenu += '<div class="collapse" id="git-collapse">';
+myMenu += '<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">';
+myMenu += '<li><a href="git-flow.html#que-es-git" class="link-dark rounded">¿Que es Git?</a></li>';
+myMenu += '<li><a href="git-flow.html#control-versiones" class="link-dark rounded">¿Qué es un control de versiones?</a></li>';
+myMenu += '<li><a href="git-flow.html#repositorio" class="link-dark rounded">Repositorio</a></li>';
+myMenu += '<li><a href="git-flow.html#barnch" class="link-dark rounded">Branch (ramificaciones)</a></li>';
+myMenu += '<li><a href="git-flow.html#pull" class="link-dark rounded">Pull Request (Fusión)</a></li>';
+myMenu += '<li><a href="git-flow.html#tag" class="link-dark rounded">Tag</a></li>';
+myMenu += '<li><a href="git-flow.html#fork" class="link-dark rounded">Fork</a></li>';
+myMenu += '<li><a href="git-flow.html#cuando-usar-git" class="link-dark rounded">Cuándo usar Github</a></li>';
+myMenu += '<li><a href="git-flow.html#git-flow" class="link-dark rounded">Git-Flow</a></li>';
+myMenu += '<li><a href="git-flow.html#github" class="link-dark rounded">GitHub-Flow</a></li>';
+myMenu += '<li><a href="git-flow.html#gitlab" class="link-dark rounded">Gitlab-Flow</a></li>';
+myMenu += '<li><a href="git-flow.html#trunk" class="link-dark rounded">Trunk Based Development</a></li>';
+myMenu += '</ul>';
+myMenu += '</div>';
+myMenu += '</li>';
+
+myMenu += '<li class="mb-1">';
 myMenu += '<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#instal-collapse" aria-expanded="false">Instaladores</button>';
 myMenu += '<div class="collapse" id="instal-collapse">';
 myMenu += '<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">';

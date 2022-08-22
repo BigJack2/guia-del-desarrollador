@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+
+  <title>Guia Jhon Vanegas</title>
+  <link rel="shortcut icon" href="img/icons/laravel.ico" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!--Fuentes ubuntu de google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/sidebars.css" rel="stylesheet" />
+
+  <!-- Custom styles for this icons -->
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/estilos.css" rel="stylesheet" />
+
+  <style></style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Este menu esta en JavaScript -->
+      <div class="col-sm-12 col-lg-3 col-xl-3 col-xxl-2 overflow-auto">
+        <div id="menu-content" class="flex-shrink-3 sticky-top overflow-auto">
+          <div id="jsMenu"></div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-lg-9 col-xl-9 col-xxl-10 pt-2 text-center">
+        <div class="row justify-content-center py-3">
+
+          <div id="que-es-git" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">
+              ¿Qué es Git?
+              <img width="40px" style="margin-left: 14px" src="img/icons/git-icon.svg" />
+            </h3>
+            <p style="text-align: justify">
+              Git es un <strong>sistema de control de versiones distribuido de código
+                abierto</strong> desarrollado
+              por Linus
+              Torvalds, el creador de Linux.
+              <br /><br />
+              El control de versiones distribuido <strong>permite a los desarrolladores descargar un
+                software, realizar
+                cambios y subir la versión que han modificado</strong>. Todas las modificaciones
+              subidas se
+              guardan en
+              versiones independientes, <strong>no sobrescribiendo en el archivo original</strong>.
+              <br /><br />
+              La diferencia entre el control de versiones y Git, es que en Git cada desarrollador
+              tendrá en el
+              ordenador una copia del código fuente original y de las versiones disponibles del
+              proyecto,
+              permitiendo la ramificación y fusión.
+              <br /><br />
+              De esta forma todos los desarrolladores interesados en el proyecto podrán ver las
+              modificaciones
+              realizadas y contribuir mejorando el código del Software.
+              <br /><br />
+              Cuando nos referimos a la parte del hub hablamos de lo que hace especial a este Git,
+              <strong>la comunidad e
+                interacción con otros usuarios</strong>.
+            </p>
+          </div>
+
+          <div id="control-versiones" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">
+              ¿Qué es un control de versiones?
+            </h3>
+            <p style="text-align: justify">
+              <strong>Un control de versiones permite a los desarrolladores administrar
+                cambios</strong> en un software a la vez
+              que el proyecto evoluciona.
+              <br /><br />
+              En el caso de que un desarrollador quisiera trabajar en un proyecto, sería arriesgado
+              realizar
+              cambios sobre el código original. El control de versiones <strong>permite duplicar una
+                parte de un proyecto
+                de forma aislada y trabajar sobre ella</strong> sin que se modifique el repositorio
+              original.
+              <br /><br />
+              Una vez comprobado que el cambio se ha realizado con éxito, el desarrollador
+              <strong>podrá fusionar su
+                ramificación con el proyecto creando una nueva versión del mismo</strong>.
+              <br /><br />
+              Esta nueva versión registra los cambios realizados sobre la versión anterior para que
+              se puedan
+              testear por otros desarrolladores.
+            </p>
+          </div>
+
+          <div id="repositorio" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">
+              Repositorio
+            </h3>
+            <p style="text-align: justify">
+              Un repositorio es la <strong>ubicación o ruta en la que se almacena toda la
+                información</strong> de un
+              proyecto como
+              imágenes, código, carpetas, documentos, etc.
+              <br /><br />
+              Cada proyecto contaría con su propio repositorio único, por lo que la ruta de acceso
+              será exclusiva
+              para el proyecto.
+            </p>
+            <img src="./img/git-flow/github-2.png" width="20%">
+          </div>
+
+          <div id="barnch" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">
+              Branch (ramificaciones)
+            </h3>
+            <p style="text-align: justify">
+              En el caso de que queramos trabajar una parte concreta de nuestro proyecto de forma
+              aislada no
+              afectando al repositorio principal, tendremos que hacerlo mediante Branch.
+              <br /><br />
+              <strong>El Branch creará una copia exacta de nuestro proyecto para hacer
+                pruebas</strong> sin miedo a
+              equivocarnos y
+              que afecte a todo el trabajo realizado.
+            </p>
+            <img src="./img/git-flow/github-3.png" width="20%">
+          </div>
+
+          <div id="pull" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">
+              Pull Request (Fusión)
+            </h3>
+            <p style="text-align: justify">
+              Cada vez que subas un nuevo cambio en una rama del proyecto, puedes avisar a los demás
+              colaboradores
+              para que validen o no tu pull request, o si encuentran posibles mejoras poder
+              comentarlas.
+            </p>
+            <img src="./img/git-flow/github-4.png" width="20%">
+          </div>
+
+          <div id="tag" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">
+              Tag
+            </h3>
+            <p style="text-align: justify">
+              <strong>Los Tag permiten controlar el estado de un repositorio dando
+                información</strong> a otros
+              usuarios de en qué
+              versión se encuentra actualmente el proyecto.
+              <br /><br />
+              Esta acción es conocida como “Tagging” y es bastante importante a la hora de gestionar
+              la vida de un
+              proyecto.
+              <br /><br />
+              Crear un nuevo proyecto a partir de otro (Fork).
+            </p>
+            <img src="./img/git-flow/github-5.png" width="20%">
+          </div>
+
+          <div id="fork" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">
+              Fork
+            </h3>
+            <p style="text-align: justify">
+              Una opción bastante usada en Github es la de Fork. Con esta opción podrás crear un
+              nuevo proyecto en
+              base a uno ya creado, permitiendo hacer modificaciones y guardándose en tu propio
+              repositorio y no
+              en el repositorio original.
+              <br /><br />
+              Esta opción facilita el crecimiento de proyectos <strong>permitiendo a los
+                desarrolladores
+                continuar
+                mejorando un software por cuenta propia</strong> y en el caso de realizarse una
+              mejora en el
+              repositorio
+              principal <strong>podrás también implementarla a tu proyecto clonado</strong>.
+              <br /><br />
+              Esta opción es conocida en Github como bifurcación.
+            </p>
+          </div>
+
+          <div id="cuando-usar-git" class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-5 pb-5">
+              Cuándo usar Github
+            </h3>
+            <p style="text-align: justify">
+              <strong>Github es perfecto para gestionar desarrollos, permitiendo compartir los
+                proyectos</strong> a
+              una gran
+              comunidad de desarrolladores que estarán encantados de cooperar y mejorar el software,
+              aportando
+              mejoras o comentarios que añadirán valor al desarrollo final.
+              <br /><br />
+              Contar con un gestor de versiones como Git permite ver todos los cambios en la vida
+              del proyecto
+              desde sus inicios.
+            </p>
+            <br /><br />
+            <a class="btn btn-primary text-end btn-lg" target="_blank"
+              href="https://docs.github.com/es/get-started/quickstart/hello-world">Ir guía de
+              Github. <i class="bx bx-exit"></i></a>
+          </div>
+
+          <div id="git-flow" class="col-sm-12 col-xl-8 p-5">
+            <h3 class="text-color1 fw-bold fuente1 pt-5 pb-5">
+              Git-Flow
+            </h3>
+            <p style="text-align: justify">
+              En teoría tan agradable y luego la dura realidad golpea. <strong>Git-Flow</strong>
+              intenta ser una
+              estrategia de
+              bifurcación universal que cubre muchos escenarios. La idea principal es tener un
+              conjunto de
+              sucursales que tienen una responsabilidad específica:
+              <br /><br />
+
+              <strong><i class="bx bx-chevron-right"></i>main/master</strong>: La versión actual
+              en producción. Si necesita la versión de producción actual, simplemente consulte
+              esta rama.
+              <br /><br />
+
+              <strong><i class="bx bx-chevron-right"></i>develop</strong>: La rama de desarrollo
+              activo.
+              <br /><br />
+
+              <strong><i class="bx bx-chevron-right"></i>feature</strong>: una rama de
+              característica se corta de <strong>develop</strong>, una vez que haya terminado,
+              volverá a
+              <strong>develop</strong>.
+              <br /><br />
+
+              <strong><i class="bx bx-chevron-right"></i>release</strong>: la rama de
+              <strong>release</strong> es
+              un guardián de la producción. Una vez que decidas que estamos listos para
+              el <strong>release</strong>, te desconectas del <strong>develop</strong> y puedes
+              hacer algunas correcciones de errores
+              en esa
+              rama. No se deben introducir nuevas características aquí.
+              <br /><br />
+
+              <strong><i class="bx bx-chevron-right"></i>hotfix - Hotfix</strong>: las ramas de
+              <strong>Hotfix</strong> se cortan de <strong>main / master o release</strong>
+              dependiendo de si desea hacer una
+              corrección normal o una revisión en producción.
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-xl-6 p-5">
+            <img src="./img/git-flow/Gitflow.webp" width="100%">
+          </div>
+
+          <div class="col-sm-12 col-xl-8 p-5">
+            <p style="text-align: justify">
+              Si solo ve la imagen, es posible que se sienta abrumado. Para ser honesto, comprimí
+              muchos casos de
+              uso en una imagen, pero esas situaciones pueden surgir. El caso de uso típico si
+              trabaja en equipos
+              grandes o tiene que alinear los ciclos de soporte con otros equipos en su entorno. Un
+              ejemplo típico
+              sería un banco. Por lo general, no lanzan software semanalmente, por lo que todo debe
+              estar
+              alineado. Además, si trabajas en equipos grandes, Git-Flow escala bastante bien.
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">Ventajas</h3>
+            <p style="text-align: justify">
+              <i class="bx bx-chevron-right"></i>Fácil de alinear el trabajo incluso en varios
+              equipos.
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Manejo de múltiples versiones de productos.
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Cada rama tiene una responsabilidad clara.
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Tenemos una puerta entre la rama de desarrollo
+              activo y la producción.
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">Contras</h3>
+            <p style="text-align: justify">
+              <i class="bx bx-chevron-right"></i>Un modelo complicado con muchas ramas. Eso también
+              significa que tiene que fusionarse entre algunos
+              de ellos, lo que aumenta la complejidad y también aumenta la posibilidad de conflictos
+              de fusión.
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Puede ralentizar el proceso de
+              desarrollo/frecuencia
+              de lanzamiento debido a todos esos pasos.
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Se necesita una mayoría del equipo y la voluntad
+              de
+              apegarse a ella.
+            </p>
+
+          </div>
+
+          <div id="github" class="col-sm-12 col-xl-8 p-5">
+            <h3 class="text-color1 fw-bold fuente1 pt-5 pb-5">
+              GitHub-Flow
+            </h3>
+            <p style="text-align: justify">
+              Es una simplificación de <strong>Git-Flow</strong> en
+              el sentido de
+              que no tenemos ramas de lanzamiento. Tenemos una rama de desarrollo activa (a menudo
+              <strong>main o master</strong>), que luego se envía a producción. Las funciones o las
+              correcciones de
+              errores se realizan
+              a través de ramas de funciones de vida relativamente larga. La idea es que la rama
+              <strong>main siempre
+                pueda pasar a producción de una forma u otra</strong>. Normalmente, las personas
+              tienden a
+              trabajar con
+              etiquetas para indicar si un compromiso específico se envía o no a un cliente.
+          </div>
+
+          <div class="col-sm-12 col-xl-8 p-5">
+            <img src="./img/git-flow/GitHubFlow.webp" width="100%">
+          </div>
+
+          <div class="col-sm-12 col-xl-8 p-5">
+            <p style="text-align: justify">
+              La idea detrás de <strong>GitHub-Flow</strong> es fomentar un flujo de trabajo
+              asíncrono. Eso significa
+              que creamos
+              algo y muchas veces tenemos una revisión que da como resultado comentarios, que luego
+              deberían
+              integrarse. La forma típica en que funcionan los proyectos de código abierto en GitHub
+              (de ahí el
+              nombre).
+              <br /><br />
+              GitHub-Flow es perfecto para proyectos de código abierto incluso con un equipo de
+              tamaño mediano.
+              Fomenta los bucles de retroalimentación directa y el trabajo asíncrono. Para tales
+              proyectos,
+              también las ramas de características de larga duración son "normales", ya que las
+              personas tienen
+              menos tiempo para trabajar en esas cosas. Pero no me detendría ahí: este flujo de
+              trabajo se adapta
+              bien a muchos escenarios con un equipo pequeño donde todo está bajo su control. Si
+              tiene que
+              mantener varias versiones activas, lo más probable es que esta no sea la estrategia de
+              ramificación
+              que desea.
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">Ventajas</h3>
+            <p style="text-align: justify">
+              <i class="bx bx-chevron-right"></i>Ciclos de retroalimentación más rápidos y ciclos de
+              producción cortos.
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Perfecto para el trabajo asíncrono en equipos más
+              pequeños.
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Más fácil de entender que Git-Flow ya que es "más
+              ágil".
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">Contras</h3>
+            <p style="text-align: justify">
+              <i class="bx bx-chevron-right"></i>Una vez que se fusiona una rama de características,
+              está lista para la producción. Si no se prueba
+              correctamente y está respaldado por un CI/CD fuerte, esto puede introducir errores más
+              fácilmente.
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Las ramas tienden a vivir más.
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Puede volverse complicado para equipos más grandes
+              (por ejemplo, mayor potencial de conflictos de
+              fusión).
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Admitir varias versiones de lanzamiento a la vez es
+              muy difícil.
+            </p>
+          </div>
+
+          <div id="gitlab" class="col-sm-12 col-xl-8 p-5">
+            <h3 class="text-color1 fw-bold fuente1 pt-5 pb-5">
+              Gitlab-Flow
+            </h3>
+            <p style="text-align: justify">
+              <strong>Gitlab-Flow</strong> se posiciona en algún lugar en el medio de
+              <strong>Git-Flow y GitHub-Flow</strong>. En esencia, sigue
+              siendo como <strong>GitHub-Flow</strong> pero agrega etapas antes de que pueda pasar a
+              producción. Entonces, en lugar
+              de decir <strong>main == production</strong> , Gitlab-Flow presenta aquí algunas ramas
+              que reflejan sus entornos de
+              ensayo "reales".
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-xl-8 p-5">
+            <img src="./img/git-flow/GitLabFlow.webp" width="100%">
+          </div>
+
+          <div class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">Ventajas</h3>
+            <p style="text-align: justify">
+              <i class="bx bx-chevron-right"></i>Puede manejar múltiples versiones de lanzamiento o
+              incluso
+              múltiples etapas.
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Más simple que <strong>Git-Flow</strong>.
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Se enfoca más en la calidad con un enfoque lean.
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">Contras</h3>
+            <p style="text-align: justify">
+              <i class="bx bx-chevron-right"></i>Puede volverse muy complejo si desea mantener
+              varias versiones.
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Más complejo que <strong>GitHub-Flow</strong>.
+            </p>
+          </div>
+
+          <div id="trunk" class="col-sm-12 col-xl-8 p-5">
+            <h3 class="text-color1 fw-bold fuente1 pt-5 pb-5">
+              Trunk Based Development
+            </h3>
+            <p style="text-align: justify">
+              <strong>El desarrollo basado en troncos ó "Trunk Based Development"</strong>. Solo
+              tiene una única rama
+              compartida llamada troncal <strong>"Trunk"</strong>. La idea es
+              eliminar por completo las ramas longevas (para que podamos evitar fusiones infernales
+              😄). El diseño
+              puede variar un poco. Hay dos sabores dependiendo del tamaño del equipo. Si el equipo
+              es un poco
+              pequeño, todos están directamente comprometidos con el tronco
+              <strong>"Trunk"</strong>. Una vez que
+              estamos listos para
+              enviar, creamos una rama <strong>release</strong> que refleja el estado en producción.
+              Si el equipo es
+              más
+              grande, normalmente tiendes a crear también ramas de características de corta duración
+              más pequeñas.
+              En el mejor de los casos, integra incluso esas ramas de funciones con la mayor
+              frecuencia posible.
+              La idea aquí es que no implemente necesariamente toda la función, sino partes de ella
+              para que pueda
+              fusionarlas con frecuencia.
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-xl-6 p-5">
+            <img src="./img/git-flow/Trunk-Based-Development.webp" width="100%">
+          </div>
+
+          <div class="col-sm-12 col-xl-8 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">Contras</h3>
+            <p style="text-align: justify">
+              Si tiene un equipo sólido que comprende los requisitos y las implicaciones del
+              <strong>desarrollo basado en
+                toncos ó "Trunk Based Development"</strong>, hágalo . No es realmente adecuado para
+              proyectos
+              de código abierto donde las personas tienden
+              a tener ramas de funciones de larga duración debido a la naturaleza de la cantidad de
+              proyectos de
+              código abierto que funcionan.
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">Ventajas</h3>
+            <p style="text-align: justify">
+              <i class="bx bx-chevron-right"></i>Fomentar perfectamente las mejores prácticas de
+              DevOps / Unit testing.
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Mejora la colaboración.
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Como casi no tenemos sucursales, hay menos
+              posibilidades de conflictos de fusión.
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Permite liberaciones rápidas.
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-xl-6 p-5">
+            <h3 class="text-color2 fw-bold fuente1 pt-2 pb-5">Contras</h3>
+            <p style="text-align: justify">
+              <i class="bx bx-chevron-right"></i>Necesitas una especie de equipo senior para lograr
+              esto. Debe saber cómo dividir una función para
+              poder integrarla con regularidad. También fomenta la autonomía, lo que puede ser
+              abrumador para los
+              jóvenes.
+              <br /><br />
+
+              <i class="bx bx-chevron-right"></i>Un fuerte sentido de CI/CD con pruebas útiles es
+              imprescindible, de lo contrario, su rama troncal
+              puede volverse inestable.
+            </p>
+          </div>
+
+          <div class="col-sm-12 col-xl-6 p-5">
+            <a class="btn btn-primary text-end btn-lg" target="_blank"
+              href="https://steven-giesel.com/blogPost/ff50f268-c0bf-44d8-a5b8-41554ab50ba8"
+              download="Booksmarks">Ir al blog Oficial <i class="bx bx-exit"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/menu.js"></script>
+
+</html>

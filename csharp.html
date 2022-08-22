@@ -67,7 +67,7 @@
               crear y usar componentes de software. Desde su origen, C# ha agregado características
               para admitir nuevas cargas de trabajo y prácticas de diseño de software emergentes. En
               esencia, C# es un lenguaje orientado a objetos. Defina los tipos y su
-              comportamiento.<br /><br />
+              comportamiento.
             </p>
           </div>
 
@@ -80,7 +80,7 @@
                 Microsoft</strong>.
               <br /><br />
               Los programadores o también diseñadores pueden utilizar este framework para construir
-              sitios web dinámicos, aplicaciones web y servicios web. <br /><br />
+              sitios web dinámicos, aplicaciones web y servicios web.
             </p>
           </div>
 
@@ -101,7 +101,7 @@
             </h3>
             <iframe
               src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=monokai&wt=none&l=text%2Fx-csharp&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=5px&ph=4px&ln=false&fl=1&fm=MonoLisa&fs=18px&lh=148%25&si=false&es=4x&wm=false&code=classProgram%250A%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520staticvoidMain%28string%255B%255D%2520args%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Console.WriteLine%28%2522Hello%2520Platzi%21%2522%29%253B%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520int%2520height%2520%253D%2520170%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520int%2520age%2520%253D%252022%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520string%2520name%2520%253D%2520%2522Abdel%2520Mejia%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520string%2520information%2520%253D%2520%2524%2522The%2520requested%2520info%2520is%253A%255CnUser%2520name%253A%2520%257Bname%257D%2520%255CnUser%2520age%253A%2520%257Bage%257D%2520%255CnUser%2520height%253A%2520%257Bheight%257D%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Console.WriteLine%28information%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%257D"
-              style="width: 100%; height: 500px; border:0; transform: scale(1); overflow:hidden;"
+              style="width: 100%; height: 530px; border:0; transform: scale(1); overflow:hidden;"
               sandbox="allow-scripts allow-same-origin">
             </iframe>
           </div>
@@ -149,7 +149,7 @@
 
             <iframe
               src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=monokai&wt=none&l=text%2Fx-csharp&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=5px&ph=4px&ln=false&fl=1&fm=MonoLisa&fs=18px&lh=148%25&si=false&es=4x&wm=false&code=using%2520System%253B%250A%250Aabstract%2520class%2520Motorcycle%250A%257B%250A%2520%2520%2520%2520%252F%252F%2520Cualquiera%2520puede%2520llamar%2520a%2520esto.%250A%2520%2520%2520%2520public%2520void%2520StartEngine%28%29%2520%257B%252F*%2520Declaraciones%2520de%2520m%25C3%25A9todos%2520aqu%25C3%25AD%2520*%252F%2520%257D%250A%250A%2520%2520%2520%2520%252F%252F%2520Solo%2520las%2520clases%2520derivadas%2520pueden%2520llamar%2520a%2520esto.%250A%2520%2520%2520%2520protected%2520void%2520AddGas%28int%2520gallons%29%2520%257B%2520%252F*%2520Declaraciones%2520de%2520m%25C3%25A9todos%2520aqu%25C3%25AD%2520*%252F%2520%257D%250A%250A%2520%2520%2520%2520%252F%252F%2520Las%2520clases%2520derivadas%2520pueden%2520anular%2520la%2520implementaci%25C3%25B3n%2520de%2520la%2520clase%2520base.%250A%2520%2520%2520%2520public%2520virtual%2520int%2520Drive%28int%2520miles%252C%2520int%2520speed%29%2520%257B%2520%252F*%2520Declaraciones%2520de%2520m%25C3%25A9todos%2520aqu%25C3%25AD%2520*%252F%2520return%25201%253B%2520%257D%250A%250A%2520%2520%2520%2520%252F%252F%2520Las%2520clases%2520derivadas%2520pueden%2520anular%2520la%2520implementaci%25C3%25B3n%2520de%2520la%2520clase%2520base.%250A%2520%2520%2520%2520public%2520virtual%2520int%2520Drive%28TimeSpan%2520time%252C%2520int%2520speed%29%2520%257B%2520%252F*%2520Declaraciones%2520de%2520m%25C3%25A9todos%2520aqu%25C3%25AD%2520*%252F%2520return%25200%253B%2520%257D%250A%250A%2520%2520%2520%2520%252F%252F%2520Las%2520clases%2520derivadas%2520deben%2520implementar%2520esto.%250A%2520%2520%2520%2520public%2520abstract%2520double%2520GetTopSpeed%28%29%253B%250A%257D"
-              style="width: 100%; height: 840px; border:0; transform: scale(1); overflow:hidden;"
+              style="width: 100%; height: 850px; border:0; transform: scale(1); overflow:hidden;"
               sandbox="allow-scripts allow-same-origin">
             </iframe>
           </div>
@@ -160,7 +160,7 @@
             </h3>
             <iframe
               src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=monokai&wt=none&l=text%2Fx-csharp&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=5px&ph=4px&ln=false&fl=1&fm=MonoLisa&fs=18px&lh=148%25&si=false&es=4x&wm=false&code=public%2520int%2520AddNumbers%28int%2520number1%252C%2520int%2520number2%29%250A%257B%250A%2509return%2520number1%2520%252B%2520number2%253B%250A%257D"
-              style="width: 100%; height: 200px; border:0; transform: scale(1); overflow:hidden;"
+              style="width: 100%; height: 230px; border:0; transform: scale(1); overflow:hidden;"
               sandbox="allow-scripts allow-same-origin">
             </iframe>
             <br /><br />
@@ -192,7 +192,7 @@
                 Microsoft</strong>.
               <br /><br />
               Los programadores o también diseñadores pueden utilizar este framework para construir
-              sitios web dinámicos, aplicaciones web y servicios web. <br /><br />
+              sitios web dinámicos, aplicaciones web y servicios web.
             </p>
           </div>
         </div>
