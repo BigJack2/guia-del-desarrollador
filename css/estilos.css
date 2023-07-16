@@ -1,3 +1,8 @@
+body {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
 :root {
   --color1: #ff2d20;
   --color2: #35495e;
